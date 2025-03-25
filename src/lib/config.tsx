@@ -11,7 +11,7 @@ export const BLUR_FADE_DELAY = 0.15;
 
 export const siteConfig = {
   name: "Cal AI",
-  description: "Smart scheduling powered by AI.",
+  description: "Smartt scheduling powered by AI.",
   cta: "Get Started",
   url: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
   keywords: [
