@@ -10,7 +10,7 @@ import {
 export const BLUR_FADE_DELAY = 0.15;
 
 export const siteConfig = {
-  name: "Cal AI",
+  name: "BuildSmartr",
   description: "Smartt scheduling powered by AI.",
   cta: "Get Started",
   url: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
