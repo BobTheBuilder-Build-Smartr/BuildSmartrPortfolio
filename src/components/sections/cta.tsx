@@ -147,7 +147,7 @@ export function CTA() {
               href="#"
               className={cn(
                 buttonVariants({ variant: "default" }),
-                "h-8 text-white rounded-full group mt-4"
+                "h-8 text-white rounded-full group mt-4 bg-blue-700"
               )}
             >
               {siteConfig.cta}

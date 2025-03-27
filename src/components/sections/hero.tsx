@@ -30,7 +30,7 @@ export function Hero() {
             className="mb-16 relative z-20"
             style={{ transformOrigin: "top" }}
           >
-            <div className="bg-primary text-white text-xl font-bold p-4 h-20 w-20 flex items-center justify-center rounded-3xl mx-auto shadow-md">
+            <div className="bg-black text-white text-xl font-bold p-4 h-20 w-20 flex items-center justify-center rounded-3xl mx-auto shadow-md">
               <Icons.logo className="w-auto h-[40px]" />
             </div>
           </motion.div>
@@ -59,9 +59,8 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.7, ease: easeInOutCubic }}
             className="max-w-2xl mx-auto text-xl mb-8 font-medium text-balance"
           >
-            {siteConfig.name} transforms your speech into text instantly.
-            Perfect for quick note-taking, content creation, and capturing ideas
-            on-the-go.
+            {/* {siteConfig.name}  */}
+            Discover how our cutting-edge chatbot solutions can completely transform your construction projects.
           </motion.p>
           <div className="flex justify-center mb-16">
             <motion.img
