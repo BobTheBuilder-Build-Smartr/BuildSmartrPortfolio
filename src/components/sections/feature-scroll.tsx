@@ -38,8 +38,8 @@ export function FeatureScroll() {
   return (
     <Section
       id="feature-scroll"
-      title="Experience"
-      subtitle="An app unlike any other"
+      title="BOB The Builder"
+      subtitle="Built for Builders. Powered by AI."
       className="container px-4 sm:px-10"
     >
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mx-auto select-none">
@@ -59,7 +59,7 @@ export function FeatureScroll() {
         />
         <motion.img
           ref={phone3Ref}
-          src="/Device-8.png"
+          src="/Device-4.png"
           alt="iPhone 3"
           className="w-full h-auto -z-10 max-w-[250px] sm:max-w-[300px] mx-auto"
           style={{ y: y3 }}

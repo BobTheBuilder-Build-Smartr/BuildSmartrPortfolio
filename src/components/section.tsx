@@ -23,7 +23,7 @@ const Section = forwardRef<HTMLElement, SectionProps>(
     const internalRef = useRef<HTMLElement>(null);
     const ref = forwardedRef || internalRef;
 
-    const sectionId = title ? title.toLowerCase().replace(/\s+/g, "-") : id;
+    const sectionId = title ? title.replace(/\s+/g, "-") : id;
     const alignmentClass =
       align === "left"
         ? "text-left"
@@ -60,7 +60,7 @@ const Section = forwardRef<HTMLElement, SectionProps>(
               {subtitle && (
                 <motion.h3
                   className={cn(
-                    "mx-0 mt-4 max-w-lg text-5xl text-balance font-bold sm:max-w-none sm:text-4xl md:text-5xl lg:text-6xl leading-[1.2] tracking-tighter text-foreground lowercase",
+                    "mx-0 mt-4 max-w-lg text-5xl text-balance font-bold sm:max-w-none sm:text-4xl md:text-5xl lg:text-6xl leading-[1.2] tracking-tighter text-foreground",
                     align === "center"
                       ? "mx-auto"
                       : align === "right"
