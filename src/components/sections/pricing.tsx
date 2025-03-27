@@ -18,11 +18,13 @@ export function Pricing() {
   const opacities = [
     useTransform(scrollYProgress, [0, 0.1, 0.3], [0, 0, 1]),
     useTransform(scrollYProgress, [0, 0.2, 0.4], [0, 0, 1]),
+    useTransform(scrollYProgress, [0, 0.3, 0.5], [0, 0, 1]),
   ];
 
   const yTransforms = [
     useTransform(scrollYProgress, [0, 0.1, 0.3], [100, 100, 0]),
     useTransform(scrollYProgress, [0, 0.2, 0.4], [100, 100, 0]),
+    useTransform(scrollYProgress, [0, 0.3, 0.5], [100, 100, 0])
   ];
 
   return (
@@ -33,7 +35,7 @@ export function Pricing() {
       className="container px-10"
       ref={ref}
     >
-      <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto py-10">
+      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto py-10">
         {siteConfig.pricing.map((plan, index) => (
           <motion.div
             key={plan.name}
