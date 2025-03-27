@@ -29,35 +29,35 @@ export const siteConfig = {
   },
   features: [
     {
-      name: "AI-Powered Scheduling",
+      name: "Multi-language Support",
       description:
         "Intelligent scheduling that learns your preferences and optimizes your time.",
       icon: <BrainIcon className="h-6 w-6" />,
     },
     {
-      name: "Smart Time Blocking",
+      name: "Seamless Chat Continuationg",
       description:
         "Automatically block time for focused work and personal activities.",
       icon: <ClockIcon className="h-6 w-6" />,
     },
     {
-      name: "Predictive Event Planning",
+      name: "Easy Context switching",
       description:
         "AI suggests optimal times for meetings and events based on your habits.",
       icon: <CalendarIcon className="h-6 w-6" />,
     },
     {
-      name: "Cloud Sync",
+      name: "XXXXXXXXX",
       description: "Access your schedule across all devices in real-time.",
       icon: <CloudIcon className="h-6 w-6" />,
     },
     {
-      name: "Team Collaboration",
+      name: "XXXXXXXXX",
       description: "Easily coordinate schedules with team members and clients.",
       icon: <UsersIcon className="h-6 w-6" />,
     },
     {
-      name: "Smart Reminders",
+      name: "XXXXXXXXX",
       description:
         "Contextual notifications that adapt to your schedule and priorities.",
       icon: <BellIcon className="h-6 w-6" />,
@@ -65,24 +65,24 @@ export const siteConfig = {
   ],
   featureHighlight: [
     {
-      title: "AI-Powered Scheduling",
+      title: "Multi-language Support",
       description:
-        "Intelligent scheduling that learns your preferences and optimizes your time.",
-      imageSrc: "/Device-2.png",
+        "Break down communication barriers with your preferred Input and Output languages.",
+      imageSrc: "/Device-3.png",
       direction: "rtl" as const,
     },
     {
-      title: "Smart Time Blocking",
+      title: "Seamless Chat Continuation",
       description:
-        "Automatically block time for focused work and personal activities.",
-      imageSrc: "/Device-3.png",
+        "Never lose context—jump back into the conversation exactly where you left off.",
+      imageSrc: "/Device-2.png",
       direction: "ltr" as const,
     },
     {
-      title: "Predictive Event Planning",
+      title: "Easy Context switching",
       description:
-        "AI suggests optimal times for meetings and events based on your habits.",
-      imageSrc: "/Device-4.png",
+        "Select your project and switch between different contexts with ease.",
+      imageSrc: "/Device-1.png",
       direction: "rtl" as const,
     },
   ],
@@ -123,22 +123,22 @@ export const siteConfig = {
   benefits: [
     {
       id: 1,
-      text: "Save hours each week with AI-optimized scheduling.",
+      text: "Securely sign in easily with just your Phone.",
       image: "/Device-6.png",
     },
     {
       id: 2,
-      text: "Reduce scheduling conflicts and double-bookings.",
+      text: "Get accurate and answers to your questions.",
       image: "/Device-7.png",
     },
     {
       id: 3,
-      text: "Improve work-life balance with smart time allocation.",
-      image: "/Device-8.png",
+      text: "Choose between 150+ languages.",
+      image: "/spinner.png",
     },
     {
       id: 4,
-      text: "Increase productivity with AI-driven time management insights.",
+      text: "Increase productivity with AI",
       image: "/Device-1.png",
     },
   ],
@@ -196,22 +196,23 @@ export const siteConfig = {
   ],
   faqs: [
     {
-      question: "How does AI improve my scheduling?",
+      question: "How does BobTheBuilder interpret my construction drawings?",
       answer: (
         <span>
-          Our AI analyzes your scheduling patterns, preferences, and
-          productivity data to suggest optimal times for tasks and meetings. It
-          learns from your behavior to continuously improve its recommendations.
+          BobTheBuilder uses advanced AI to analyze architectural and engineering
+          documents, recognizing key elements such as dimensions, materials, and
+          structural components. It then provides insights, flags conflicts, and
+          answers questions based on the plans&apos; details.
         </span>
       ),
     },
     {
-      question: "Can I integrate Cal AI with other apps?",
+      question: "Is my data secure with BobTheBuilder?",
       answer: (
         <span>
-          Yes, Cal AI integrates with popular productivity tools and calendar
-          apps. You can sync with Google Calendar, Outlook, and more to
-          centralize your scheduling.
+          Absolutely. We encrypt all project data end-to-end and adhere to strict
+          data privacy practices. Your sensitive construction documents and chat
+          history remain confidential and secure.
         </span>
       ),
     },
@@ -219,29 +220,21 @@ export const siteConfig = {
       question: "How does the team collaboration feature work?",
       answer: (
         <span>
-          Team collaboration allows you to share availability, schedule group
-          meetings, and coordinate tasks. The AI considers everyone&apos;s
-          schedules to find the best times for team activities.
+          Our AI keeps everyone in the loop by centralizing plan updates and
+          answers to common questions. Team members can ask BobTheBuilder about
+          any aspect of the project, and the AI coordinates changes and
+          notifications across the entire team.
         </span>
       ),
     },
     {
-      question: "Is my data secure with Cal AI?",
+      question: "Do I need internet access to use BobTheBuilder?",
       answer: (
         <span>
-          We take data security seriously. All your calendar data is encrypted
-          end-to-end and stored securely in the cloud. We never share your
-          personal information or scheduling data with third parties.
-        </span>
-      ),
-    },
-    {
-      question: "Can I use Cal AI offline?",
-      answer: (
-        <span>
-          While full functionality requires an internet connection, you can view
-          your schedule and add events offline. The app will sync and apply AI
-          optimizations when you&apos;re back online.
+          While core functionality requires an online connection to run AI
+          queries, you can still access certain cached or previously viewed data
+          offline. Once reconnected, BobTheBuilder syncs and updates the project
+          details and insights.
         </span>
       ),
     },
@@ -261,87 +254,87 @@ export const siteConfig = {
   testimonials: [
     {
       id: 1,
-      text: "Cal AI has revolutionized how I manage my time. It&apos;s like having a personal assistant.",
+      text: "BobTheBuilder has revolutionized how we interpret construction drawings. It's like having an experienced site manager on demand.",
       name: "Alice Johnson",
-      role: "Freelance Designer",
+      role: "Freelance Architect",
       image:
         "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydHJhaXR8ZW58MHx8MHx8fDA%3D",
     },
     {
       id: 2,
-      text: "The AI-powered scheduling has significantly reduced conflicts in our team&apos;s calendar.",
+      text: "This AI tool has drastically reduced miscommunications on site, saving our team both time and money.",
       name: "Bob Brown",
-      role: "Project Manager, Tech Innovations",
+      role: "Project Manager, Skyline Construction",
       image:
         "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBvcnRyYWl0fGVufDB8fDB8fHww",
     },
     {
       id: 3,
-      text: "The smart time blocking feature has helped me maintain a better work-life balance.",
+      text: "The AI’s plan analysis helped me maintain better oversight across multiple developments.",
       name: "Charlie Davis",
-      role: "Entrepreneur",
+      role: "Independent Contractor",
       image:
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBvcnRyYWl0fGVufDB8fDB8fHww",
     },
     {
       id: 4,
-      text: "Cal AI's predictive planning has made my workweek so much more efficient.",
+      text: "BobTheBuilder's advanced plan scanning has made our weekly site meetings so much more efficient.",
       name: "Diana Evans",
-      role: "Marketing Director",
+      role: "Construction Coordinator",
       image:
         "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHBvcnRyYWl0fGVufDB8fDB8fHww",
     },
     {
       id: 5,
-      text: "The team collaboration features have streamlined our project management process.",
+      text: "The team communication features have streamlined our subcontractors’ coordination like never before.",
       name: "Ethan Ford",
-      role: "Software Team Lead",
+      role: "Site Superintendent",
       image:
         "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHBvcnRyYWl0fGVufDB8fDB8fHww",
     },
     {
       id: 6,
-      text: "Cal AI has helped me balance my work and personal commitments effortlessly.",
+      text: "BobTheBuilder helps us track each plan detail effortlessly, from blueprint changes to supply orders.",
       name: "Fiona Grant",
-      role: "HR Manager",
+      role: "Procurement Manager",
       image:
         "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fHBvcnRyYWl0fGVufDB8fDB8fHww",
     },
     {
       id: 7,
-      text: "The AI-driven insights have helped me optimize my daily routines significantly.",
+      text: "The AI-driven insights have helped me optimize daily site tasks and spot potential issues early.",
       name: "George Harris",
-      role: "Productivity Coach",
+      role: "Site Foreman",
       image:
         "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fHBvcnRyYWl0fGVufDB8fDB8fHww",
     },
     {
       id: 8,
-      text: "Cal AI's integration with my other tools has created a seamless workflow.",
+      text: "Its integration with our project management tools has created a truly seamless construction workflow.",
       name: "Hannah Irving",
-      role: "Digital Nomad",
+      role: "Digital Construction Specialist",
       image:
         "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fHBvcnRyYWl0fGVufDB8fDB8fHww",
     },
     {
       id: 9,
-      text: "The smart reminders have drastically reduced my missed appointments.",
+      text: "The automated reminders have drastically reduced missed deadlines in our project timeline.",
       name: "Ian Johnson",
-      role: "Sales Executive",
+      role: "Operations Supervisor",
       image:
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fHBvcnRyYWl0fGVufDB8fDB8fHww",
     },
     {
       id: 10,
-      text: "Cal AI's ability to learn my preferences has made scheduling a breeze.",
+      text: "BobTheBuilder’s ability to interpret complex structural drawings is a game-changer.",
       name: "Julia Kim",
-      role: "Researcher",
+      role: "Structural Engineer",
       image:
         "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fHBvcnRyYWl0fGVufDB8fDB8fHww",
     },
     {
       id: 11,
-      text: "The AI-suggested meeting times have improved our team's productivity.",
+      text: "The AI-suggested solutions for design conflicts have increased our team’s productivity and reduced rework.",
       name: "Kevin Lee",
       role: "Operations Manager",
       image:
@@ -349,113 +342,113 @@ export const siteConfig = {
     },
     {
       id: 12,
-      text: "Cal AI's travel time estimations have made my commute planning much easier.",
+      text: "The real-time data on build progress has made my urban planning far simpler.",
       name: "Laura Martinez",
-      role: "Urban Planner",
+      role: "Urban Development Planner",
       image:
         "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fHBvcnRyYWl0fGVufDB8fDB8fHww",
     },
     {
       id: 13,
-      text: "The AI-powered task prioritization has helped me focus on what's truly important.",
+      text: "Having the AI highlight potential building constraints upfront has saved me from major setbacks.",
       name: "Michael Nelson",
-      role: "Entrepreneur",
+      role: "Commercial Developer",
       image:
         "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzZ8fHBvcnRyYWl0fGVufDB8fDB8fHww",
     },
     {
       id: 14,
-      text: "Cal AI's habit tracking feature has helped me build better routines.",
+      text: "BobTheBuilder's daily updates have helped me stick to critical timelines and keep scheduling on track.",
       name: "Natalie Owens",
-      role: "Personal Trainer",
+      role: "Project Scheduler",
       image:
         "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODB8fHBvcnRyYWl0fGVufDB8fDB8fHww",
     },
     {
       id: 15,
-      text: "The AI suggestions for breaks have improved my work-from-home productivity.",
+      text: "The AI suggestions for break times and resource allocation have improved jobsite productivity.",
       name: "Oscar Parker",
-      role: "Remote Worker",
+      role: "Site Manager",
       image:
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODR8fHBvcnRyYWl0fGVufDB8fDB8fHww",
     },
     {
       id: 16,
-      text: "Cal AI's integration with my smart home devices has streamlined my mornings.",
+      text: "Integrating BobTheBuilder with our existing vendor systems has streamlined our material orders.",
       name: "Patricia Quinn",
-      role: "Tech Enthusiast",
+      role: "Procurement Specialist",
       image:
         "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fHBvcnRyYWl0fGVufDB8fDB8fHww",
     },
     {
       id: 17,
-      text: "The AI-driven energy level tracking has helped me schedule tasks more effectively.",
+      text: "Tracking energy usage and optimizing processes is so much easier with BobTheBuilder’s analytics.",
       name: "Quincy Roberts",
-      role: "Productivity Consultant",
+      role: "Sustainability Consultant",
       image:
         "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTJ8fHBvcnRyYWl0fGVufDB8fDB8fHww",
     },
     {
       id: 18,
-      text: "Cal AI's goal-setting features have kept me accountable and on track.",
+      text: "The goal-setting features keep every build phase on track and within budget.",
       name: "Rachel Stevens",
-      role: "Life Coach",
+      role: "Cost Analyst",
       image:
         "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTZ8fHBvcnRyYWl0fGVufDB8fDB8fHww",
     },
     {
       id: 19,
-      text: "The AI-suggested focus times have dramatically improved my deep work sessions.",
+      text: "The AI-suggested focus times for our crew have boosted on-site productivity daily.",
       name: "Samuel Thompson",
-      role: "Writer",
+      role: "Project Engineer",
       image:
         "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAwfHxwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D",
     },
     {
       id: 20,
-      text: "Cal AI's team availability feature has made cross-timezone scheduling effortless.",
+      text: "Sharing availability with multiple subcontractors across regions is finally effortless.",
       name: "Tina Upton",
-      role: "Global Project Coordinator",
+      role: "Global Logistics Coordinator",
       image:
         "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA0fHxwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D",
     },
     {
       id: 21,
-      text: "The AI-powered meeting summarizer has saved me hours of note-taking.",
+      text: "The AI-powered meeting recaps are brilliant. I can review everything without missing a detail.",
       name: "Ulysses Vaughn",
-      role: "Executive Assistant",
+      role: "Executive Assistant to the CEO",
       image:
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA4fHxwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D",
     },
     {
       id: 22,
-      text: "Cal AI's personalized productivity insights have been eye-opening.",
+      text: "BobTheBuilder's daily project insights have been a game-changer for our entire construction pipeline.",
       name: "Victoria White",
-      role: "Business Analyst",
+      role: "Business Analyst, Construction Sector",
       image:
         "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEyfHxwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D",
     },
     {
       id: 23,
-      text: "The AI-suggested networking opportunities have expanded my professional circle.",
+      text: "The recommended networking resources have expanded our industry partnerships.",
       name: "William Xavier",
-      role: "Startup Founder",
+      role: "Startup Founder, BuildTech Solutions",
       image:
         "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE2fHxwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D",
     },
     {
       id: 24,
-      text: "Cal AI's integration with my fitness tracker has helped me maintain a healthier lifestyle.",
+      text: "Integrating with my health & safety compliance tools has made site inspections a breeze.",
       name: "Xena Yates",
-      role: "Wellness Coach",
+      role: "Safety & Compliance Officer",
       image:
         "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIwfHxwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D",
     },
     {
       id: 25,
-      text: "The AI-driven project timeline suggestions have kept our team ahead of deadlines.",
+      text: "The AI-driven timeline suggestions keep us comfortably ahead of schedule on every job.",
       name: "Yannick Zimmerman",
-      role: "Project Manager",
+      role: "Lead Project Manager",
       image:
         "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI0fHxwb3J0cmFpdHxlbnwwfHwwfHx8MA%3D%3D",
     },
