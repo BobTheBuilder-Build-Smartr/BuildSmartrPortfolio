@@ -1,5 +1,6 @@
 import { Section } from "@/components/section";
 import { siteConfig } from "@/lib/config";
+import Image from "next/image";
 
 export function Testimonials() {
   return (
@@ -19,10 +20,12 @@ export function Testimonials() {
           >
             <div className="px-4 py-5 sm:p-6 flex-grow">
               <div className="flex items-center mb-4">
-                <img
+                <Image
                   className="h-10 w-10 rounded-full object-cover"
                   src={testimonial.image}
-                  alt={testimonial.name}
+                  alt={`${testimonial.name}'s profile picture`}
+                  width={40}
+                  height={40}
                 />
                 <div className="ml-3">
                   <h3 className="text-lg font-medium text-foreground">

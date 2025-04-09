@@ -28,7 +28,7 @@ export default function ContactPage() {
           <CardContent className="pt-6">
             <div className="text-center">
               <h2 className="text-2xl font-semibold text-foreground mb-2">Thank You!</h2>
-              <p className="text-muted-foreground">We'll be in touch soon.</p>
+              <p className="text-muted-foreground">We&apos;ll be in touch soon.</p>
               <p className="text-sm text-muted-foreground mt-2">Redirecting to home page...</p>
             </div>
           </CardContent>
