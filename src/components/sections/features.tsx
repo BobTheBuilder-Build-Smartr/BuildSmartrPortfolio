@@ -26,7 +26,7 @@ export function Features() {
               </h2>
             </div>
             <p className="text-sm text-muted-foreground mb-4">{description}</p>
-            <Link href="#" className="text-sm text-primary hover:underline">
+            <Link href="/contact" className="text-sm text-primary hover:underline">
               Learn more &gt;
             </Link>
           </div>

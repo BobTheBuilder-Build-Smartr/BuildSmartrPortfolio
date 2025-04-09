@@ -78,7 +78,7 @@ function Feature({
           </motion.p>
           <motion.div variants={itemVariants}>
             <Link
-              href="#"
+              href="/contact"
               className={cn(
                 buttonVariants({ variant: "default", size: "lg" }),
                 "text-white rounded-full group text-lg",

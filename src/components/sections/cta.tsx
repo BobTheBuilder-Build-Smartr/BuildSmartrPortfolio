@@ -144,7 +144,7 @@ export function CTA() {
             </h1>
             <p className="mt-2">{siteConfig.description}</p>
             <Link
-              href="#"
+              href="/contact"
               className={cn(
                 buttonVariants({ variant: "default" }),
                 "h-8 text-white rounded-full group mt-4 bg-blue-700"

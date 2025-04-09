@@ -71,7 +71,7 @@ export function Header() {
             </Link>
             <div className="hidden lg:block">
               <Link
-                href="#"
+                href="/contact"
                 className={cn(
                   buttonVariants({ variant: "default" }),
                   "h-8 text-white rounded-full group bg-blue-700"

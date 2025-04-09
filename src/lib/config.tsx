@@ -145,7 +145,7 @@ export const siteConfig = {
   pricing: [
     {
       name: "Free",
-      href: "#",
+      href: "/contact",
       price: "$0",
       period: "month",
       yearlyPrice: "$0",
@@ -161,7 +161,7 @@ export const siteConfig = {
     },
     {
       name: "Basic",
-      href: "#",
+      href: "/contact",
       price: "$49",
       period: "month",
       yearlyPrice: "$0",
@@ -173,12 +173,12 @@ export const siteConfig = {
         "Choose any of the output language",
       ],
       description: "Best for small/medium teams",
-      buttonText: "Start Free",
+      buttonText: "Best Starter",
       isPopular: false,
     },
     {
       name: "Pro",
-      href: "#",
+      href: "/contact",
       price: "$79",
       period: "month",
       yearlyPrice: "$120",
