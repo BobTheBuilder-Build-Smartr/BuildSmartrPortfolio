@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -10,15 +10,45 @@ import { Card, CardHeader, CardContent, CardFooter } from "@/components/ui/card"
 export default function ContactPage() {
   const router = useRouter();
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsSubmitted(true);
+    setIsSubmitting(true);
+
+    const formData = new FormData(e.currentTarget);
     
-    // Redirect after 3 seconds
-    setTimeout(() => {
-      router.push("/");
-    }, 2500);
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: JSON.stringify({
+          access_key: '900a45c9-52a1-4925-91b1-fc5709cbc21b',
+          name: formData.get('name'),
+          email: formData.get('email'),
+          phone: formData.get('phone'),
+          message: formData.get('message'),
+          subject: `New Contact Form Submission from ${formData.get('name')}`,
+        }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        // Redirect after 2.5 seconds
+        setTimeout(() => {
+          router.push("/");
+        }, 2500);
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('There was an error submitting the form. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (isSubmitted) {
@@ -49,6 +79,7 @@ export default function ContactPage() {
               <Label htmlFor="name">Name</Label>
               <Input
                 id="name"
+                name="name"
                 placeholder="Enter your name"
                 required
               />
@@ -57,6 +88,7 @@ export default function ContactPage() {
               <Label htmlFor="email">Email</Label>
               <Input
                 id="email"
+                name="email"
                 type="email"
                 placeholder="Enter your email"
                 required
@@ -66,6 +98,7 @@ export default function ContactPage() {
               <Label htmlFor="phone">Phone</Label>
               <Input
                 id="phone"
+                name="phone"
                 type="tel"
                 placeholder="Enter your phone number"
                 required
@@ -75,6 +108,7 @@ export default function ContactPage() {
               <Label htmlFor="message">Message</Label>
               <textarea
                 id="message"
+                name="message"
                 className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                 placeholder="Enter your message"
                 required
@@ -82,8 +116,8 @@ export default function ContactPage() {
             </div>
           </CardContent>
           <CardFooter>
-            <Button type="submit" className="w-full">
-              Submit
+            <Button type="submit" className="w-full" disabled={isSubmitting}>
+              {isSubmitting ? 'Submitting...' : 'Submit'}
             </Button>
           </CardFooter>
         </form>
