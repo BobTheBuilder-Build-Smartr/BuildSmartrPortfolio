@@ -3,13 +3,17 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { siteConfig } from "@/lib/config";
 import { fontSans } from "@/lib/fonts";
-import { cn, constructMetadata } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
-export const metadata: Metadata = constructMetadata({
-  title: `${siteConfig.name} | ${siteConfig.description}`,
-});
+export const metadata: Metadata = {
+  title: {
+    template: `%s | ${siteConfig.name}`,
+    default: `${siteConfig.name} | ${siteConfig.description}`,
+  },
+  description: siteConfig.description,
+};
 
 export const viewport: Viewport = {
   colorScheme: "light",
