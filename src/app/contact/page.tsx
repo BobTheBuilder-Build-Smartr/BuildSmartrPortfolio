@@ -22,7 +22,7 @@ export default function ContactPage() {
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         body: JSON.stringify({
-          access_key: '900a45c9-52a1-4925-91b1-fc5709cbc21b',
+          access_key: 'dbd58a67-b9db-4688-8791-6ad64a3b1428',
           name: formData.get('name'),
           email: formData.get('email'),
           phone: formData.get('phone'),
