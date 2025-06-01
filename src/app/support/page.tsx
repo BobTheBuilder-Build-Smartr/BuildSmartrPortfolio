@@ -42,7 +42,7 @@ export default function SupportPage() {
             <div className="space-y-2">
               <h3 className="text-lg font-medium text-foreground">Q3: How do I see which projects I am part of?</h3>
               <p className="text-muted-foreground">
-                A3: Your assigned projects are visible in the &quot;Projects&quot; tab within the Application. If a project is missing, please contact your BuildSmartr Inc. administrator.
+                A3: Your assigned projects are visible in the &quot;Projects&quot; tab within the Application. If a project&apos;s missing, please contact your BuildSmartr Inc. administrator.
               </p>
             </div>
 
@@ -58,7 +58,7 @@ export default function SupportPage() {
             <div className="space-y-2">
               <h3 className="text-lg font-medium text-foreground">Q5: I've forgotten my password or can't receive an OTP.</h3>
               <p className="text-muted-foreground">
-                A5: BobTheBuilder uses OTPs sent to your registered phone number for initial login or re-authentication. If you are not receiving OTPs, please check your SMS blocking settings, ensure your phone has network service, and that the registered phone number is correct with your BuildSmartr Inc. administrator. For persistent issues, contact support.
+                A5: BobTheBuilder uses OTPs sent to your registered phone number for initial login or re-authentication. If you&apos;re not receiving OTPs, please check your SMS blocking settings, ensure your phone has network service, and that the registered phone number is correct with your BuildSmartr Inc. administrator. For persistent issues, contact support.
               </p>
             </div>
           </div>

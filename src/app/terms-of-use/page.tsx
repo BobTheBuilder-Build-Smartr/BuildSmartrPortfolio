@@ -110,7 +110,7 @@ export default function TermsOfUsePage() {
               We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will endeavor to provide at least 30 days&apos; notice prior to any new terms taking effect by posting the new Terms on this site or through the Application. What constitutes a material change will be determined at our sole discretion.
             </p>
             <p className="text-muted-foreground">
-              By continuing to access or use our Service after any revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you are no longer authorized to use the Service.
+              By continuing to access or use our Service after any revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you&apos;re no longer authorized to use the Service.
             </p>
           </section>
 
