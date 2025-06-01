@@ -23,8 +23,10 @@ type Link = {
 };
 
 const links: Link[] = [
-  { text: "Pricing", url: "#" },
-  { text: "Contact", url: "#" },
+  // { text: "Pricing", url: "/pricing" },
+  { text: "Privacy Policy", url: "/privacy-policy" },
+  { text: "Terms of Use", url: "/terms-of-use" },
+  { text: "Support", url: "/support" },
 ];
 
 export function Footer() {
