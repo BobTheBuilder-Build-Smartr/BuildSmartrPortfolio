@@ -48,7 +48,7 @@ export default function PrivacyPolicyPage() {
                     <span className="font-medium">Project Associations:</span> Information about the projects you are associated with within the Application, as assigned by an administrator.
                   </li>
                   <li>
-                    <span className="font-medium">Chat History:</span> The content of your conversations with the chatbots within the Application, including your queries and the bot's responses. This data is used to provide the service and may be used to improve the bot's performance for the specific project dataset it is trained on.
+                    <span className="font-medium">Chat History:</span> The content of your conversations with the chatbots within the Application, including your queries and the bots responses. This data is used to provide the service and may be used to improve the bots performance for the specific project dataset it is trained on.
                   </li>
                   <li>
                     <span className="font-medium">App Activity:</span> We may collect information about your interactions with the Application, such as the features you use (e.g., navigating Projects, History, Chat, Settings tabs), and the time, frequency, and duration of your activities.
@@ -155,7 +155,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Section 7 */}
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-foreground">7. CHILDREN'S PRIVACY</h2>
+            <h2 className="text-2xl font-semibold text-foreground">7. CHILDRENS PRIVACY</h2>
             <p className="text-muted-foreground">
               BobTheBuilder is intended for use by professionals in the construction industry and is not directed to children under the age of 13 (or the applicable age of digital consent in your jurisdiction). We do not knowingly collect personally identifiable information from children under these ages. If we become aware that a child under the relevant age has provided us with personal information without parental consent, we will take steps to delete such information.
             </p>
