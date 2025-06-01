@@ -37,7 +37,7 @@ export default function PrivacyPolicyPage() {
                     <span className="font-medium">Phone Number:</span> Your phone number is used for account identification and authentication via a One-Time Password (OTP) verification process for logging into the Application.
                   </li>
                   <li>
-                    <span className="font-medium">User Profile Information (Optional):</span> You may voluntarily provide or update additional personal information such as your name, profile image, and biography within the Application's settings. This information is not required to use the core functionality of the Application.
+                    <span className="font-medium">User Profile Information (Optional):</span> You may voluntarily provide or update additional personal information such as your name, profile image, and biography within the Applications settings. This information is not required to use the core functionality of the Application.
                   </li>
                 </ul>
               </div>
@@ -142,11 +142,11 @@ export default function PrivacyPolicyPage() {
             </p>
             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
               <li><span className="font-medium">The right to access</span> – You have the right to request copies of your personal data.</li>
-              <li><span className="font-medium">The right to rectification</span> – You have the right to request that we correct any information you believe is inaccurate or complete information you believe is incomplete. You can often update some of this information directly in the Application&apos;s settings.</li>
+              <li><span className="font-medium">The right to rectification</span> – You have the right to request that we correct any information you believe is inaccurate or complete information you believe is incomplete. You can often update some of this information directly in the Applications settings.</li>
               <li><span className="font-medium">The right to erasure</span> – You have the right to request that we erase your personal data, under certain conditions.</li>
               <li><span className="font-medium">The right to restrict processing</span> – You have the right to request that we restrict the processing of your personal data, under certain conditions.</li>
               <li><span className="font-medium">The right to object to processing</span> – You have the right to object to our processing of your personal data, under certain conditions.</li>
-              <li><span className="font-medium">The right to data portability</span> – You have the right to request that we transfer the data that we&apos;ve collected to another organization, or directly to you, under certain conditions.</li>
+              <li><span className="font-medium">The right to data portability</span> – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</li>
             </ul>
             <p className="text-muted-foreground">
               To exercise these rights, please contact us at <a href="mailto:support@bobthebuilder.ai" className="text-primary hover:underline">support@bobthebuilder.ai</a> or through your BuildSmartr Inc. administrator.
