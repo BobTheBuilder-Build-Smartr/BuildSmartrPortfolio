@@ -37,7 +37,7 @@ export default function PrivacyPolicyPage() {
                     <span className="font-medium">Phone Number:</span> Your phone number is used for account identification and authentication via a One-Time Password (OTP) verification process for logging into the Application.
                   </li>
                   <li>
-                    <span className="font-medium">User Profile Information (Optional):</span> You may voluntarily provide or update additional personal information such as your name, profile image, and biography within the Applications settings. This information is not required to use the core functionality of the Application.
+                    <span className="font-medium">User Profile Information (Optional):</span> You may voluntarily provide or update additional personal information such as your name, profile image, and biography within the Application&apos;s settings. This information is not required to use the core functionality of the Application.
                   </li>
                 </ul>
               </div>
@@ -48,7 +48,7 @@ export default function PrivacyPolicyPage() {
                     <span className="font-medium">Project Associations:</span> Information about the projects you are associated with within the Application, as assigned by an administrator.
                   </li>
                   <li>
-                    <span className="font-medium">Chat History:</span> The content of your conversations with the chatbots within the Application, including your queries and the bots responses. This data is used to provide the service and may be used to improve the bots performance for the specific project dataset it is trained on.
+                    <span className="font-medium">Chat History:</span> The content of your conversations with the chatbots within the Application, including your queries and the bot&apos;s responses. This data is used to provide the service and may be used to improve the bot&apos;s performance for the specific project dataset it is trained on.
                   </li>
                   <li>
                     <span className="font-medium">App Activity:</span> We may collect information about your interactions with the Application, such as the features you use (e.g., navigating Projects, History, Chat, Settings tabs), and the time, frequency, and duration of your activities.
@@ -142,7 +142,7 @@ export default function PrivacyPolicyPage() {
             </p>
             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
               <li><span className="font-medium">The right to access</span> – You have the right to request copies of your personal data.</li>
-              <li><span className="font-medium">The right to rectification</span> – You have the right to request that we correct any information you believe is inaccurate or complete information you believe is incomplete. You can often update some of this information directly in the Applications settings.</li>
+              <li><span className="font-medium">The right to rectification</span> – You have the right to request that we correct any information you believe is inaccurate or complete information you believe is incomplete. You can often update some of this information directly in the Application&apos;s settings.</li>
               <li><span className="font-medium">The right to erasure</span> – You have the right to request that we erase your personal data, under certain conditions.</li>
               <li><span className="font-medium">The right to restrict processing</span> – You have the right to request that we restrict the processing of your personal data, under certain conditions.</li>
               <li><span className="font-medium">The right to object to processing</span> – You have the right to object to our processing of your personal data, under certain conditions.</li>
@@ -155,7 +155,7 @@ export default function PrivacyPolicyPage() {
 
           {/* Section 7 */}
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-foreground">7. CHILDRENS PRIVACY</h2>
+            <h2 className="text-2xl font-semibold text-foreground">7. CHILDREN&apos;S PRIVACY</h2>
             <p className="text-muted-foreground">
               BobTheBuilder is intended for use by professionals in the construction industry and is not directed to children under the age of 13 (or the applicable age of digital consent in your jurisdiction). We do not knowingly collect personally identifiable information from children under these ages. If we become aware that a child under the relevant age has provided us with personal information without parental consent, we will take steps to delete such information.
             </p>
@@ -178,4 +178,4 @@ export default function PrivacyPolicyPage() {
       </div>
     </div>
   );
-} 
+}
