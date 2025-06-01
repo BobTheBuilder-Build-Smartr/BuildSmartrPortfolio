@@ -42,7 +42,7 @@ export default function SupportPage() {
             <div className="space-y-2">
               <h3 className="text-lg font-medium text-foreground">Q3: How do I see which projects I am part of?</h3>
               <p className="text-muted-foreground">
-                A3: Your assigned projects are visible in the "Projects" tab within the Application. If a project is missing, please contact your BuildSmartr Inc. administrator.
+                A3: Your assigned projects are visible in the &quot;Projects&quot; tab within the Application. If a project is missing, please contact your BuildSmartr Inc. administrator.
               </p>
             </div>
 
@@ -50,7 +50,7 @@ export default function SupportPage() {
             <div className="space-y-2">
               <h3 className="text-lg font-medium text-foreground">Q4: Can I change my name or profile picture in the app?</h3>
               <p className="text-muted-foreground">
-                A4: Yes, you can update your name, profile picture, and bio information within the "Settings" tab of the Application.
+                A4: Yes, you can update your name, profile picture, and bio information within the &quot;Settings&quot; tab of the Application.
               </p>
             </div>
 

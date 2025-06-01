@@ -14,7 +14,7 @@ export default function TermsOfUsePage() {
           <h1 className="text-3xl font-bold text-foreground">Terms of Use for BobTheBuilder</h1>
           <p className="text-lg text-muted-foreground">Effective Date: June 15, 2026</p>
           <p className="text-muted-foreground">
-            Please read these Terms of Use ("Terms," "Terms of Use") carefully before using the BobTheBuilder mobile application (the "Service," "Application") operated by BuildSmartr Inc. ("us," "we," or "our").
+            Please read these Terms of Use (&quot;Terms,&quot; &quot;Terms of Use&quot;) carefully before using the BobTheBuilder mobile application (the &quot;Service,&quot; &quot;Application&quot;) operated by BuildSmartr Inc. (&quot;us,&quot; &quot;we,&quot; or &quot;our&quot;).
           </p>
           <p className="text-muted-foreground">
             Your access to and use of the Service is conditioned upon your acceptance of and compliance with these Terms. These Terms apply to all users who wish to access or use the Service. As users are onboarded by an administrator from BuildSmartr Inc., continued access is also subject to your ongoing relationship with BuildSmartr Inc. or its clients. By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the terms, then you do not have permission to access the Service.
@@ -85,7 +85,7 @@ export default function TermsOfUsePage() {
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-foreground">6. DISCLAIMER OF WARRANTIES; LIMITATION OF LIABILITY</h2>
             <p className="text-muted-foreground font-medium">
-              THE SERVICE IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. BUILDMARTR INC. MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, AS TO THE OPERATION OF THE SERVICE, OR THE INFORMATION, CONTENT OR MATERIALS INCLUDED THEREIN. YOU EXPRESSLY AGREE THAT YOUR USE OF THE SERVICE, ITS CONTENT, AND ANY SERVICES OR ITEMS OBTAINED FROM US IS AT YOUR SOLE RISK.
+              THE SERVICE IS PROVIDED ON AN &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; BASIS. BUILDMARTR INC. MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, AS TO THE OPERATION OF THE SERVICE, OR THE INFORMATION, CONTENT OR MATERIALS INCLUDED THEREIN. YOU EXPRESSLY AGREE THAT YOUR USE OF THE SERVICE, ITS CONTENT, AND ANY SERVICES OR ITEMS OBTAINED FROM US IS AT YOUR SOLE RISK.
             </p>
             <p className="text-muted-foreground">
               NEITHER BUILDMARTR INC. NOR ANY PERSON ASSOCIATED WITH BUILDMARTR INC. MAKES ANY WARRANTY OR REPRESENTATION WITH RESPECT TO THE COMPLETENESS, SECURITY, RELIABILITY, QUALITY, ACCURACY, OR AVAILABILITY OF THE SERVICE. WITHOUT LIMITING THE FOREGOING, NEITHER BUILDMARTR INC. NOR ANYONE ASSOCIATED WITH BUILDMARTR INC. REPRESENTS OR WARRANTS THAT THE SERVICE, ITS CONTENT, OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE SERVICE WILL BE ACCURATE, RELIABLE, ERROR-FREE, OR UNINTERRUPTED, THAT DEFECTS WILL BE CORRECTED, THAT THE SERVICE OR THE SERVER THAT MAKES IT AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS OR THAT THE SERVICE OR ANY SERVICES OR ITEMS OBTAINED THROUGH THE SERVICE WILL OTHERWISE MEET YOUR NEEDS OR EXPECTATIONS.
