@@ -32,7 +32,7 @@ export default function SupportPage() {
 
             {/* FAQ Item 2 */}
             <div className="space-y-2">
-              <h3 className="text-lg font-medium text-foreground">Q2: I'm having trouble with the chat bot. What should I do?</h3>
+              <h3 className="text-lg font-medium text-foreground">Q2: I&#39;m having trouble with the chat bot. What should I do?</h3>
               <p className="text-muted-foreground">
                 A2: Please ensure your device has a stable internet connection. If the issue persists, try restarting the BobTheBuilder app. If you believe the bot is not responding correctly based on the project data, please provide feedback through the contact method below, mentioning the specific project and your query.
               </p>
@@ -56,7 +56,7 @@ export default function SupportPage() {
 
             {/* FAQ Item 5 */}
             <div className="space-y-2">
-              <h3 className="text-lg font-medium text-foreground">Q5: I've forgotten my password or can't receive an OTP.</h3>
+              <h3 className="text-lg font-medium text-foreground">Q5: I&#39;ve forgotten my password or can&#39;t receive an OTP.</h3>
               <p className="text-muted-foreground">
                 A5: BobTheBuilder uses OTPs sent to your registered phone number for initial login or re-authentication. If you are not receiving OTPs, please check your SMS blocking settings, ensure your phone has network service, and that the registered phone number is correct with your BuildSmartr Inc. administrator. For persistent issues, contact support.
               </p>
@@ -68,7 +68,7 @@ export default function SupportPage() {
         <section className="space-y-6">
           <h2 className="text-2xl font-semibold text-foreground">Contact Us</h2>
           <p className="text-muted-foreground">
-            If you can't find the answer to your question in our FAQs, or if you need further assistance:
+            If you can&#39;t find the answer to your question in our FAQs, or if you need further assistance:
           </p>
 
           <div className="space-y-6">

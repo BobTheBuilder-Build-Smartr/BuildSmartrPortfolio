@@ -61,7 +61,7 @@ export default function TermsOfUsePage() {
               <li>In any way that violates any applicable national or international law or regulation.</li>
               <li>To transmit, or procure the sending of, any unauthorized advertising or promotional material.</li>
               <li>To impersonate or attempt to impersonate BuildSmartr Inc., a BuildSmartr Inc. employee, another user, or any other person or entity.</li>
-              <li>To engage in any other conduct that restricts or inhibits anyone's use or enjoyment of the Service, or which, as determined by us, may harm BuildSmartr Inc. or users of the Service or expose them to liability.</li>
+              <li>To engage in any other conduct that restricts or inhibits anyone&#39;s use or enjoyment of the Service, or which, as determined by us, may harm BuildSmartr Inc. or users of the Service or expose them to liability.</li>
               <li>To attempt to gain unauthorized access to, interfere with, damage, or disrupt any parts of the Service, the server on which the Service is stored (hosted on Amazon Web Services - AWS), or any server, computer, or database connected to the Service.</li>
               <li>To reverse engineer, decompile, or disassemble any part of the Service, including the chatbots, except as permitted by applicable law.</li>
             </ul>
@@ -97,9 +97,9 @@ export default function TermsOfUsePage() {
 
           {/* Section 7 */}
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-foreground">7. GOVERNING LAW</h2>
+            <h2 className="text-2xl font-semibold text-foreground">7. CHILDREN&#39;S PRIVACY</h2>
             <p className="text-muted-foreground">
-              These Terms shall be governed and construed in accordance with the laws of the Province of British Columbia and the federal laws of Canada applicable therein, without regard to its conflict of law provisions.
+              We do not knowingly collect personal information from children under the age of 13. If you are under the age of 13, please do not use the Service.
             </p>
           </section>
 
