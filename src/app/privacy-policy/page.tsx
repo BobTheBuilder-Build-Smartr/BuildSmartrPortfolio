@@ -14,10 +14,10 @@ export default function PrivacyPolicyPage() {
           <h1 className="text-3xl font-bold text-foreground">Privacy Policy for BobTheBuilder</h1>
           <p className="text-lg text-muted-foreground">Effective Date: June 15, 2026</p>
           <p className="text-muted-foreground">
-            Welcome to BobTheBuilder ("us," "we," or "our"), an application provided by BuildSmartr Inc. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application, BobTheBuilder (the "Application"). Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the Application.
+            Welcome to BobTheBuilder (&quot;us,&quot; &quot;we,&quot; or &quot;our&quot;), an application provided by BuildSmartr Inc. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application, BobTheBuilder (the &quot;Application&quot;). Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the Application.
           </p>
           <p className="text-muted-foreground">
-            We reserve the right to make changes to this Privacy Policy at any time and for any reason. We will alert you about any changes by updating the "Effective Date" of this Privacy Policy. You are encouraged to periodically review this Privacy Policy to stay informed of updates.
+            We reserve the right to make changes to this Privacy Policy at any time and for any reason. We will alert you about any changes by updating the &quot;Effective Date&quot; of this Privacy Policy. You are encouraged to periodically review this Privacy Policy to stay informed of updates.
           </p>
         </section>
 

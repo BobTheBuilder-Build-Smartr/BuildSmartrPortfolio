@@ -13,7 +13,7 @@ export default function SupportPage() {
         <section className="space-y-4">
           <h1 className="text-3xl font-bold text-foreground">Support for BobTheBuilder</h1>
           <p className="text-lg text-muted-foreground">
-            Welcome to BobTheBuilder support, provided by BuildSmartr Inc. We're here to help you get the most out of the Application.
+            Welcome to BobTheBuilder support, provided by BuildSmartr Inc. We&apos;re here to help you get the most out of the Application.
           </p>
         </section>
 
