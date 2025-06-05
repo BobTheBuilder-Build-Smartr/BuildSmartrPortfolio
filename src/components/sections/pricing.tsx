@@ -32,7 +32,7 @@ export function Pricing() {
     <Section
       id="pricing"
       title="Pricing"
-      subtitle="simple pricing"
+      subtitle="simple pricing per user"
       className="container px-10"
       ref={ref}
     >

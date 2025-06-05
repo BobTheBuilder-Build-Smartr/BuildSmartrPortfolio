@@ -6,7 +6,7 @@ export function Testimonials() {
   return (
     <Section
       title="Testimonials"
-      subtitle="What our users say"
+      subtitle="Jobsites powered by Ai"
       className="container px-10"
     >
       <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4 py-10">

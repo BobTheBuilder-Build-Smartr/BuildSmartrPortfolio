@@ -60,7 +60,7 @@ export function Hero() {
             className="max-w-2xl mx-auto text-xl mb-8 font-medium text-balance"
           >
             {/* {siteConfig.name}  */}
-            Explore Bob the Builder — the world’s first construction chatbot that reads plans, answers questions, and empowers your team to work smarter and faster.
+            Get Bob the Builder on your jobsite - the world's first construction ai agent that knows all the details of your project. Bob reads plans, pdf's, answers questions and gives all workers on your site the answers to work smarter and faster.
           </motion.p>
           <div className="flex justify-center mb-16">
             <motion.img

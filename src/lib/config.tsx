@@ -10,7 +10,7 @@ import {
 export const BLUR_FADE_DELAY = 0.15;
 
 export const siteConfig = {
-  name: "BuildSmartr",
+  name: "BobTheBuilder AI",
   description: "Revolutionize Construction with AI",
   cta: "Get Started",
   url: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
@@ -41,7 +41,7 @@ export const siteConfig = {
       icon: <ClockIcon className="h-6 w-6" />,
     },
     {
-      name: "Easy Context switching",
+      name: "Easy Job switching",
       description:
         "AI suggests optimal times for meetings and events based on your habits.",
       icon: <CalendarIcon className="h-6 w-6" />,
@@ -72,49 +72,49 @@ export const siteConfig = {
       direction: "rtl" as const,
     },
     {
-      title: "Seamless Chat Continuation",
+      title: "Full Chat History",
       description:
         "Never lose context—jump back into the conversation exactly where you left off.",
       imageSrc: "/Device-2.png",
       direction: "ltr" as const,
     },
     {
-      title: "Easy Context switching",
+      title: "Easy Job switching",
       description:
-        "Select your project and switch between different contexts with ease.",
+        "Select your project and switch between different all your jobs with ease.",
       imageSrc: "/Device-1.png",
       direction: "rtl" as const,
     },
   ],
   bento: [
     {
-      title: "AI-Powered Scheduling",
+      title: "AI Superpower",
       content:
-        "Our app uses advanced AI to optimize your calendar, suggesting the best times for meetings and tasks based on your preferences and habits.",
+        "Our app uses construction specific Ai learns everything about your project and will give you and your team the correct answers.",
       imageSrc: "/Device-1.png",
       imageAlt: "AI scheduling illustration",
       fullWidth: true,
     },
     {
-      title: "Smart Time Blocking",
+      title: "Smart Project Blocking",
       content:
-        "Automatically block out time for focused work, breaks, and personal activities to maintain a balanced and productive schedule.",
+        "Each project and it's data is organized separately and give access to each project how you like.",
       imageSrc: "/Device-2.png",
       imageAlt: "Time blocking illustration",
       fullWidth: false,
     },
     {
-      title: "Intelligent Reminders",
+      title: "Intelligent Search",
       content:
-        "Receive context-aware notifications that adapt to your schedule, ensuring you never miss important events or deadlines.",
+        "Receive context and page numbers for where the answer was retrieved from so you can double check.",
       imageSrc: "/Device-3.png",
       imageAlt: "Smart reminders illustration",
       fullWidth: false,
     },
     {
-      title: "Team Collaboration",
+      title: "24/7 Collaboration",
       content:
-        "Effortlessly coordinate schedules with team members and clients, finding optimal meeting times across different time zones.",
+        "Allow your team to instantly get any information they need at any time of the day. Your jobsite never sleeps.",
       imageSrc: "/Device-4.png",
       imageAlt: "Team collaboration illustration",
       fullWidth: true,
@@ -123,17 +123,17 @@ export const siteConfig = {
   benefits: [
     {
       id: 1,
-      text: "Securely sign in easily with just your Phone.",
-      image: "/Device-6.png",
+      text: "What is J1?",
+      image: "/Device-4.png",
     },
     {
       id: 2,
-      text: "Get accurate and answers to your questions.",
+      text: "How much should my total lumber bill be?",
       image: "/Device-7.png",
     },
     {
       id: 3,
-      text: "Choose between 150+ languages.",
+      text: "Make me a list of the windows and their sizes?",
       image: "/spinner.png",
     },
     {

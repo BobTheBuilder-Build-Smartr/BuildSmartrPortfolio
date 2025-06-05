@@ -25,7 +25,7 @@ export function Benefits() {
   return (
     <Section
       title="Benefits"
-      subtitle={`What you can do with BobTheBuilder`}
+      subtitle={`What would you ask BobTheBuilder AI`}
       className="bg-muted relative max-w-screen"
     >
       <div
