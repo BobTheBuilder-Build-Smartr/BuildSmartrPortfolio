@@ -1,5 +1,8 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import { ComponentPropsWithoutRef } from "react";
+import { useEffect, useState } from "react";
 
 interface MarqueeProps extends ComponentPropsWithoutRef<"div"> {
   /**
@@ -41,11 +44,31 @@ export function Marquee({
   repeat = 4,
   ...props
 }: MarqueeProps) {
+  const [containerWidth, setContainerWidth] = useState(0);
+  const [contentWidth, setContentWidth] = useState(0);
+
+  useEffect(() => {
+    const updateWidths = () => {
+      const container = document.querySelector('.marquee-container');
+      const content = document.querySelector('.marquee-content');
+      if (container && content) {
+        setContainerWidth(container.clientWidth);
+        setContentWidth(content.clientWidth);
+        console.log('Marquee Container Width:', container.clientWidth);
+        console.log('Marquee Content Width:', content.clientWidth);
+      }
+    };
+
+    updateWidths();
+    window.addEventListener('resize', updateWidths);
+    return () => window.removeEventListener('resize', updateWidths);
+  }, []);
+
   return (
     <div
       {...props}
       className={cn(
-        "group flex overflow-hidden p-2 [--duration:40s] [--gap:1rem] [gap:var(--gap)]",
+        "group flex overflow-hidden p-2 [--gap:1rem]",
         {
           "flex-row": !vertical,
           "flex-col": vertical,
@@ -59,10 +82,10 @@ export function Marquee({
           <div
             key={i}
             className={cn("flex shrink-0 justify-around [gap:var(--gap)]", {
-              "animate-marquee flex-row": !vertical,
-              "animate-marquee-vertical flex-col": vertical,
               "group-hover:[animation-play-state:paused]": pauseOnHover,
               "[animation-direction:reverse]": reverse,
+              "animate-marquee flex-row": !vertical,
+              "animate-marquee-vertical flex-col": vertical,
             })}
           >
             {children}
