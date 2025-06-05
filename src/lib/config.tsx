@@ -79,9 +79,9 @@ export const siteConfig = {
       direction: "ltr" as const,
     },
     {
-      title: "Easy Job switching",
+      title: "Easy Job Management",
       description:
-        "Select your project and switch between different all your jobs with ease.",
+        "Select any of your projects and upload any documents or information with ease.",
       imageSrc: "/Device-1.png",
       direction: "rtl" as const,
     },
@@ -90,15 +90,15 @@ export const siteConfig = {
     {
       title: "AI Superpower",
       content:
-        "Our app uses construction specific Ai learns everything about your project and will give you and your team the correct answers.",
+        "Our app uses our construction specific Ai model and learns everything about your project to get you any information you need.",
       imageSrc: "/Device-1.png",
       imageAlt: "AI scheduling illustration",
       fullWidth: true,
     },
     {
-      title: "Smart Project Blocking",
+      title: "Your Projects",
       content:
-        "Each project and it's data is organized separately and give access to each project how you like.",
+        "Upload any documents for your project and it's data is organized to give you answers.",
       imageSrc: "/Device-2.png",
       imageAlt: "Time blocking illustration",
       fullWidth: false,
@@ -106,15 +106,15 @@ export const siteConfig = {
     {
       title: "Intelligent Search",
       content:
-        "Receive context and page numbers for where the answer was retrieved from so you can double check.",
+        "Receive context and page numbers for where the data was retrieved from so you can double check.",
       imageSrc: "/Device-3.png",
       imageAlt: "Smart reminders illustration",
       fullWidth: false,
     },
     {
-      title: "24/7 Collaboration",
+      title: "Powerful 24/7 Collaboration",
       content:
-        "Allow your team to instantly get any information they need at any time of the day. Your jobsite never sleeps.",
+        "Allow your team and tradespeople to instantly get any information they need- your jobsite never sleeps.",
       imageSrc: "/Device-4.png",
       imageAlt: "Team collaboration illustration",
       fullWidth: true,

@@ -22,18 +22,17 @@ export function ClientsMarquee() {
       className="container px-10"
     >
       <Marquee 
-        className="py-8 bg-muted/30 rounded-lg my-8 [--duration:40s]"
+        className="relative flex overflow-hidden p-2 py-8 bg-muted/30 rounded-lg my-8 [--duration:15s] [--gap:1rem] group"
       >
         {marqueeItems.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 w-[200px] h-[200px] flex-shrink-0 justify-center"
+            className="flex flex-col items-center bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 px-2 w-[200px] h-[220px] flex-shrink-0 text-center"
           >
-            {/* Placeholder for logo */}
-            <div className="w-16 h-16 bg-gray-400 dark:bg-gray-600 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-xl font-bold">
+            <div className="w-16 h-16 bg-gray-400 dark:bg-gray-600 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-xl font-bold flex-shrink-0">
               Logo
             </div>
-            <div className="text-lg font-semibold text-center text-gray-900 dark:text-white line-clamp-2">
+            <div className="mt-auto text-lg font-semibold text-gray-900 dark:text-white line-clamp-3">
               {item}
             </div>
           </div>
