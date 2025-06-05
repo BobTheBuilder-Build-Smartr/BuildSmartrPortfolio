@@ -5,7 +5,8 @@ const nextConfig = {
       { hostname: "localhost" },
       { hostname: "randomuser.me" },
       { hostname: "images.unsplash.com" },
-      { hostname: "avatar.vercel.sh" }
+      { hostname: "avatar.vercel.sh" },
+      { hostname: "via.placeholder.com" },
     ],
   },
 };

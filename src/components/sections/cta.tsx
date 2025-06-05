@@ -1,6 +1,8 @@
+"use client";
+
 import { Icons } from "@/components/icons";
 import { buttonVariants } from "@/components/ui/button";
-import Marquee from "@/components/ui/marquee";
+import { Marquee } from "@/components/magicui/marquee";
 import { siteConfig } from "@/lib/config";
 import { cn } from "@/lib/utils";
 import { ChevronRight } from "lucide-react";

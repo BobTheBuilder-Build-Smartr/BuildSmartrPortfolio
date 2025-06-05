@@ -1,51 +1,88 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { useEffect, useState } from "react";
 
 interface MarqueeProps {
   className?: string;
-  reverse?: boolean;
+  children: React.ReactNode;
+  direction?: "left" | "right";
+  speed?: number;
   pauseOnHover?: boolean;
-  children?: React.ReactNode;
-  vertical?: boolean;
+  reverse?: boolean;
   repeat?: number;
-  [key: string]: any;
 }
 
-export default function Marquee({
+export function Marquee({
   className,
-  reverse,
-  pauseOnHover = false,
   children,
-  vertical = false,
-  repeat = 4,
-  ...props
+  direction = "left",
+  speed = 20,
+  pauseOnHover = false,
+  reverse = false,
+  repeat = 1,
 }: MarqueeProps) {
+  const [containerWidth, setContainerWidth] = useState(0);
+  const [contentWidth, setContentWidth] = useState(0);
+
+  useEffect(() => {
+    const updateWidths = () => {
+      const container = document.querySelector('.marquee-container');
+      const content = document.querySelector('.marquee-content');
+      if (container && content) {
+        setContainerWidth(container.clientWidth);
+        setContentWidth(content.clientWidth);
+      }
+    };
+
+    updateWidths();
+    window.addEventListener('resize', updateWidths);
+    return () => window.removeEventListener('resize', updateWidths);
+  }, []);
+
   return (
-    <div
-      {...props}
+    <div 
       className={cn(
-        "group flex overflow-hidden p-2 [--duration:40s] [--gap:1rem] [gap:var(--gap)]",
-        {
-          "flex-row": !vertical,
-          "flex-col": vertical,
-        },
-        className,
+        "overflow-hidden w-full",
+        pauseOnHover && "hover:[animation-play-state:paused]",
+        className
       )}
     >
-      {Array(repeat)
-        .fill(0)
-        .map((_, i) => (
-          <div
-            key={i}
-            className={cn("flex shrink-0 justify-around [gap:var(--gap)]", {
-              "animate-marquee flex-row": !vertical,
-              "animate-marquee-vertical flex-col": vertical,
-              "group-hover:[animation-play-state:paused]": pauseOnHover,
-              "[animation-direction:reverse]": reverse,
-            })}
-          >
-            {children}
-          </div>
-        ))}
+      <motion.div
+        className="flex whitespace-nowrap marquee-content"
+        animate={{
+          x: direction === "left" ? [0, -contentWidth] : [0, contentWidth],
+        }}
+        transition={{
+          x: {
+            repeat: Infinity,
+            repeatType: "loop",
+            duration: speed,
+            ease: "linear",
+            repeatDelay: 0,
+          },
+        }}
+        style={{
+          animationDirection: reverse ? "reverse" : "normal",
+        }}
+      >
+        {Array(repeat)
+          .fill(0)
+          .map((_, i) => (
+            <div key={i} className="flex shrink-0">
+              {children}
+            </div>
+          ))}
+        {/* Duplicate content for seamless loop */}
+        {Array(repeat)
+          .fill(0)
+          .map((_, i) => (
+            <div key={`duplicate-${i}`} className="flex shrink-0">
+              {children}
+            </div>
+          ))}
+      </motion.div>
     </div>
   );
 }
