@@ -27,7 +27,7 @@ export function ClientsMarquee() {
         {marqueeItems.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 px-2 w-[200px] h-[220px] flex-shrink-0 text-center"
+            className="flex flex-col ml-6 items-center bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 px-2 w-[200px] h-[220px] flex-shrink-0 text-center"
           >
             <div className="w-16 h-16 bg-gray-400 dark:bg-gray-600 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-xl font-bold flex-shrink-0">
               Logo

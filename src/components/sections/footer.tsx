@@ -12,9 +12,9 @@ interface Icon {
 }
 
 const icons: Icon[] = [
-  { icon: <LinkedInLogoIcon />, url: "#" },
-  { icon: <InstagramLogoIcon />, url: "#" },
-  { icon: <TwitterLogoIcon />, url: "#" },
+  { icon: <LinkedInLogoIcon />, url: "https://buildsmartr.com/" },
+  { icon: <InstagramLogoIcon />, url: "https://buildsmartr.com/" },
+  { icon: <TwitterLogoIcon />, url: "https://buildsmartr.com/" },
 ];
 
 type Link = {
@@ -45,6 +45,7 @@ export function Footer() {
             <a
               key={index}
               href={icon.url}
+              target="_blank"
               className="flex h-5 w-5 items-center justify-center text-muted-foreground transition-all duration-100 ease-linear hover:text-foreground hover:underline hover:underline-offset-4"
             >
               {icon.icon}
