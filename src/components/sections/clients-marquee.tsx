@@ -21,7 +21,8 @@ export function ClientsMarquee() {
       className="container px-10"
     >
       <Marquee 
-        className="relative flex overflow-hidden p-2 py-8 bg-muted/30 rounded-lg my-8 [--duration:15s] [--gap:1rem] group"
+        duration={15}
+        className="relative flex overflow-hidden p-2 py-8 bg-muted/30 rounded-lg my-8 [--gap:1rem] group"
       >
         {marqueeItems.map((item, index) => (
           <div

@@ -98,7 +98,7 @@ export function CTA() {
       <div className="py-14 container mx-auto px-4 max-w-[1000px] ">
         <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-[2rem] border p-10 py-14">
           <div className="absolute rotate-[35deg]">
-            <Marquee pauseOnHover className="[--duration:20s]" repeat={3}>
+            <Marquee pauseOnHover duration={20} repeat={3}>
               {firstRow.map((review) => (
                 <ReviewCard key={review.username} {...review} />
               ))}
@@ -106,14 +106,14 @@ export function CTA() {
             <Marquee
               reverse
               pauseOnHover
-              className="[--duration:20s]"
+              duration={20}
               repeat={3}
             >
               {secondRow.map((review) => (
                 <ReviewCard key={review.username} {...review} />
               ))}
             </Marquee>
-            <Marquee pauseOnHover className="[--duration:20s]" repeat={3}>
+            <Marquee pauseOnHover duration={20} repeat={3}>
               {firstRow.map((review) => (
                 <ReviewCard key={review.username} {...review} />
               ))}
@@ -121,14 +121,14 @@ export function CTA() {
             <Marquee
               reverse
               pauseOnHover
-              className="[--duration:20s]"
+              duration={20}
               repeat={3}
             >
               {secondRow.map((review) => (
                 <ReviewCard key={review.username} {...review} />
               ))}
             </Marquee>
-            <Marquee pauseOnHover className="[--duration:20s]" repeat={3}>
+            <Marquee pauseOnHover duration={20} repeat={3}>
               {firstRow.map((review) => (
                 <ReviewCard key={review.username} {...review} />
               ))}
@@ -136,7 +136,7 @@ export function CTA() {
             <Marquee
               reverse
               pauseOnHover
-              className="[--duration:20s]"
+              duration={20}
               repeat={3}
             >
               {secondRow.map((review) => (

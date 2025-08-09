@@ -1,8 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { ComponentPropsWithoutRef } from "react";
-import { useEffect, useState } from "react";
+import { ComponentPropsWithoutRef, useRef, useEffect, useState } from "react";
 
 interface MarqueeProps extends ComponentPropsWithoutRef<"div"> {
   /**
@@ -33,6 +32,11 @@ interface MarqueeProps extends ComponentPropsWithoutRef<"div"> {
    * @default 4
    */
   repeat?: number;
+  /**
+   * Animation duration in seconds
+   * @default 20
+   */
+  duration?: number;
 }
 
 export function Marquee({
@@ -42,31 +46,44 @@ export function Marquee({
   children,
   vertical = false,
   repeat = 4,
+  duration = 20,
   ...props
 }: MarqueeProps) {
-  const [containerWidth, setContainerWidth] = useState(0);
-  const [contentWidth, setContentWidth] = useState(0);
+  const [mounted, setMounted] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const updateWidths = () => {
-      const container = document.querySelector('.marquee-container');
-      const content = document.querySelector('.marquee-content');
-      if (container && content) {
-        setContainerWidth(container.clientWidth);
-        setContentWidth(content.clientWidth);
-        console.log('Marquee Container Width:', container.clientWidth);
-        console.log('Marquee Content Width:', content.clientWidth);
-      }
-    };
-
-    updateWidths();
-    window.addEventListener('resize', updateWidths);
-    return () => window.removeEventListener('resize', updateWidths);
+    setMounted(true);
   }, []);
+
+  if (!mounted) {
+    return (
+      <div
+        {...props}
+        className={cn(
+          "group flex overflow-hidden p-2 [--gap:1rem]",
+          {
+            "flex-row": !vertical,
+            "flex-col": vertical,
+          },
+          className,
+        )}
+      >
+        {Array(repeat)
+          .fill(0)
+          .map((_, i) => (
+            <div key={i} className="flex shrink-0 justify-around">
+              {children}
+            </div>
+          ))}
+      </div>
+    );
+  }
 
   return (
     <div
       {...props}
+      ref={containerRef}
       className={cn(
         "group flex overflow-hidden p-2 [--gap:1rem]",
         {
@@ -75,6 +92,9 @@ export function Marquee({
         },
         className,
       )}
+      style={{
+        '--duration': `${duration}s`,
+      } as React.CSSProperties}
     >
       {Array(repeat)
         .fill(0)

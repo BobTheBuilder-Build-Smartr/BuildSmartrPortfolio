@@ -60,9 +60,9 @@ export function Hero() {
             className="max-w-2xl mx-auto text-xl mb-8 font-medium text-balance"
           >
             {/* {siteConfig.name}  */}
-            Get Super-Builder AI on your jobsite - the world's first
+            Get Super-Builder AI on your jobsite - the world&apos;s first
             construction ai agent that knows all the details of your project.
-            Super-Builder AI reads plans, pdf's, answers questions and gives all
+            Super-Builder AI reads plans, pdf&apos;s, answers questions and gives all
             workers on your site the answers to work smarter and faster.
           </motion.p>
           <div className="flex justify-center mb-16">
