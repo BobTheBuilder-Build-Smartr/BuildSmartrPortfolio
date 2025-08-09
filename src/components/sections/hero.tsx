@@ -60,17 +60,22 @@ export function Hero() {
             className="max-w-2xl mx-auto text-xl mb-8 font-medium text-balance"
           >
             {/* {siteConfig.name}  */}
-            Get Super-Builder AI on your jobsite - the world's first construction ai agent that knows all the details of your project. Super-Builder AI reads plans, pdf's, answers questions and gives all workers on your site the answers to work smarter and faster.
+            Get Super-Builder AI on your jobsite - the world's first
+            construction ai agent that knows all the details of your project.
+            Super-Builder AI reads plans, pdf's, answers questions and gives all
+            workers on your site the answers to work smarter and faster.
           </motion.p>
           <div className="flex justify-center mb-16">
-            <motion.img
-              src="/download-black.svg"
-              alt="Download"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 1 }}
-              className="w-40 flex-shrink-0 dark:hidden block"
-            />
+            <a href="/">
+              <motion.img
+                src="/download-black.svg"
+                alt="Download"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 1 }}
+                className="w-40 flex-shrink-0 dark:hidden block hover:scale-110 transition-all"
+              />
+            </a>
             <motion.img
               src="/download-white.svg"
               alt="Download"
