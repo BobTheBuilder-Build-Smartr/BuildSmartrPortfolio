@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Support",
-  description: "Support for BobTheBuilder",
+  description: "Support for Super-Builder AI",
 };
 
 export default function SupportPage() {
@@ -11,9 +11,9 @@ export default function SupportPage() {
       <div className="space-y-8">
         {/* Welcome Section */}
         <section className="space-y-4">
-          <h1 className="text-3xl font-bold text-foreground">Support for BobTheBuilder</h1>
+          <h1 className="text-3xl font-bold text-foreground">Support for Super-Builder AI</h1>
           <p className="text-lg text-muted-foreground">
-            Welcome to BobTheBuilder support, provided by BuildSmartr Inc. We are here to help you get the most out of the Application.
+            Welcome to Super-Builder AI support, provided by BuildSmartr Inc. We are here to help you get the most out of the Application.
           </p>
         </section>
 
@@ -24,7 +24,7 @@ export default function SupportPage() {
           <div className="space-y-6">
             {/* FAQ Item 1 */}
             <div className="space-y-2">
-              <h3 className="text-lg font-medium text-foreground">Q1: How do I log into BobTheBuilder?</h3>
+              <h3 className="text-lg font-medium text-foreground">Q1: How do I log into Super-Builder AI?</h3>
               <p className="text-muted-foreground">
                 A1: Your account is created by a BuildSmartr Inc. administrator. You will use your designated phone number to log in. An OTP (One-Time Password) will be sent via SMS to this number for verification. Once verified, your session will be managed securely.
               </p>
@@ -34,7 +34,7 @@ export default function SupportPage() {
             <div className="space-y-2">
               <h3 className="text-lg font-medium text-foreground">Q2: I&#39;m having trouble with the chat bot. What should I do?</h3>
               <p className="text-muted-foreground">
-                A2: Please ensure your device has a stable internet connection. If the issue persists, try restarting the BobTheBuilder app. If you believe the bot is not responding correctly based on the project data, please provide feedback through the contact method below, mentioning the specific project and your query.
+                A2: Please ensure your device has a stable internet connection. If the issue persists, try restarting the Super-Builder AI app. If you believe the bot is not responding correctly based on the project data, please provide feedback through the contact method below, mentioning the specific project and your query.
               </p>
             </div>
 
@@ -58,7 +58,7 @@ export default function SupportPage() {
             <div className="space-y-2">
               <h3 className="text-lg font-medium text-foreground">Q5: I&#39;ve forgotten my password or can&#39;t receive an OTP.</h3>
               <p className="text-muted-foreground">
-                A5: BobTheBuilder uses OTPs sent to your registered phone number for initial login or re-authentication. If you are not receiving OTPs, please check your SMS blocking settings, ensure your phone has network service, and that the registered phone number is correct with your BuildSmartr Inc. administrator. For persistent issues, contact support.
+                A5: Super-Builder AI uses OTPs sent to your registered phone number for initial login or re-authentication. If you are not receiving OTPs, please check your SMS blocking settings, ensure your phone has network service, and that the registered phone number is correct with your BuildSmartr Inc. administrator. For persistent issues, contact support.
               </p>
             </div>
           </div>
@@ -86,7 +86,7 @@ export default function SupportPage() {
                 <p>18860 24 Ave, Unit 110</p>
                 <p>Surrey, BC V3Z 0Y8</p>
                 <p>Canada</p>
-                <p>Email: <a href="mailto:support@bobthebuilder.ai" className="text-primary hover:underline">support@bobthebuilder.ai</a></p>
+                <p>Email: <a href="mailto:support@super-builder.ai" className="text-primary hover:underline">support@super-builder.ai</a></p>
               </div>
             </div>
 
@@ -111,7 +111,7 @@ export default function SupportPage() {
           </div>
         </section>
 
-        <p className="text-lg font-medium text-foreground">Thank you for using BobTheBuilder!</p>
+        <p className="text-lg font-medium text-foreground">Thank you for using Super-Builder AI!</p>
       </div>
     </div>
   );

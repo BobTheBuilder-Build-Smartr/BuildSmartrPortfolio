@@ -10,7 +10,7 @@ import {
 export const BLUR_FADE_DELAY = 0.15;
 
 export const siteConfig = {
-  name: "BobTheBuilder AI",
+  name: "Super-Builder AI",
   description: "Revolutionize Construction with AI",
   cta: "Get Started",
   url: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
@@ -21,7 +21,7 @@ export const siteConfig = {
     "Time Management",
   ],
   links: {
-    email: "support@calai.app",
+    email: "support@super-builder.app",
     twitter: "https://twitter.com/calaiapp",
     discord: "https://discord.gg/calaiapp",
     github: "https://github.com/calaiapp",
@@ -196,10 +196,10 @@ export const siteConfig = {
   ],
   faqs: [
     {
-      question: "How does BobTheBuilder interpret my construction drawings?",
+      question: "How does Super-Builder AI interpret my construction drawings?",
       answer: (
         <span>
-          BobTheBuilder uses advanced AI to analyze architectural and engineering
+          Super-Builder AI uses advanced AI to analyze architectural and engineering
           documents, recognizing key elements such as dimensions, materials, and
           structural components. It then provides insights, flags conflicts, and
           answers questions based on the plans&apos; details.
@@ -207,7 +207,7 @@ export const siteConfig = {
       ),
     },
     {
-      question: "Is my data secure with BobTheBuilder?",
+      question: "Is my data secure with Super-Builder AI?",
       answer: (
         <span>
           Absolutely. We encrypt all project data end-to-end and adhere to strict
@@ -221,19 +221,19 @@ export const siteConfig = {
       answer: (
         <span>
           Our AI keeps everyone in the loop by centralizing plan updates and
-          answers to common questions. Team members can ask BobTheBuilder about
+          answers to common questions. Team members can ask Super-Builder AI about
           any aspect of the project, and the AI coordinates changes and
           notifications across the entire team.
         </span>
       ),
     },
     {
-      question: "Do I need internet access to use BobTheBuilder?",
+      question: "Do I need internet access to use Super-Builder AI?",
       answer: (
         <span>
           While core functionality requires an online connection to run AI
           queries, you can still access certain cached or previously viewed data
-          offline. Once reconnected, BobTheBuilder syncs and updates the project
+          offline. Once reconnected, Super-Builder AI syncs and updates the project
           details and insights.
         </span>
       ),
@@ -254,7 +254,7 @@ export const siteConfig = {
   testimonials: [
     {
       id: 1,
-      text: "BobTheBuilder has revolutionized how we interpret construction drawings. It's like having an experienced site manager on demand.",
+      text: "Super-Builder AI has revolutionized how we interpret construction drawings. It's like having an experienced site manager on demand.",
       name: "Alice Johnson",
       role: "Freelance Architect",
       image:
@@ -278,7 +278,7 @@ export const siteConfig = {
     },
     {
       id: 4,
-      text: "BobTheBuilder's advanced plan scanning has made our weekly site meetings so much more efficient.",
+      text: "Super-Builder AI's advanced plan scanning has made our weekly site meetings so much more efficient.",
       name: "Diana Evans",
       role: "Construction Coordinator",
       image:
@@ -294,7 +294,7 @@ export const siteConfig = {
     },
     {
       id: 6,
-      text: "BobTheBuilder helps us track each plan detail effortlessly, from blueprint changes to supply orders.",
+      text: "Super-Builder AI helps us track each plan detail effortlessly, from blueprint changes to supply orders.",
       name: "Fiona Grant",
       role: "Procurement Manager",
       image:
@@ -326,7 +326,7 @@ export const siteConfig = {
     },
     {
       id: 10,
-      text: "BobTheBuilder’s ability to interpret complex structural drawings is a game-changer.",
+      text: "Super-Builder AI's ability to interpret complex structural drawings is a game-changer.",
       name: "Julia Kim",
       role: "Structural Engineer",
       image:
@@ -358,7 +358,7 @@ export const siteConfig = {
     },
     {
       id: 14,
-      text: "BobTheBuilder's daily updates have helped me stick to critical timelines and keep scheduling on track.",
+      text: "Super-Builder AI's daily updates have helped me stick to critical timelines and keep scheduling on track.",
       name: "Natalie Owens",
       role: "Project Scheduler",
       image:
@@ -374,7 +374,7 @@ export const siteConfig = {
     },
     {
       id: 16,
-      text: "Integrating BobTheBuilder with our existing vendor systems has streamlined our material orders.",
+      text: "Integrating Super-Builder AI with our existing vendor systems has streamlined our material orders.",
       name: "Patricia Quinn",
       role: "Procurement Specialist",
       image:
@@ -382,7 +382,7 @@ export const siteConfig = {
     },
     {
       id: 17,
-      text: "Tracking energy usage and optimizing processes is so much easier with BobTheBuilder’s analytics.",
+      text: "Tracking energy usage and optimizing processes is so much easier with Super-Builder AI's analytics.",
       name: "Quincy Roberts",
       role: "Sustainability Consultant",
       image:
@@ -422,7 +422,7 @@ export const siteConfig = {
     },
     {
       id: 22,
-      text: "BobTheBuilder's daily project insights have been a game-changer for our entire construction pipeline.",
+      text: "Super-Builder AI's daily project insights have been a game-changer for our entire construction pipeline.",
       name: "Victoria White",
       role: "Business Analyst, Construction Sector",
       image:

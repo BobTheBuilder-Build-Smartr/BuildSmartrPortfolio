@@ -68,7 +68,6 @@ export function Header() {
             >
               <Icons.logo className="w-auto" />
               <span className="font-bold text-xl">{siteConfig.name}</span>
-              {/* <span className="font-bold text-xl">BobTheBuilder AI</span> */}
             </Link>
             <div className="hidden lg:block">
               <Link

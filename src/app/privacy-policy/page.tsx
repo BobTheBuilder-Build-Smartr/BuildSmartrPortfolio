@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Privacy Policy for BobTheBuilder",
+  description: "Privacy Policy for Super-Builder AI",
 };
 
 export default function PrivacyPolicyPage() {
@@ -11,10 +11,10 @@ export default function PrivacyPolicyPage() {
       <div className="space-y-8">
         {/* Header Section */}
         <section className="space-y-4">
-          <h1 className="text-3xl font-bold text-foreground">Privacy Policy for BobTheBuilder</h1>
+          <h1 className="text-3xl font-bold text-foreground">Privacy Policy for Super-Builder AI</h1>
           <p className="text-lg text-muted-foreground">Effective Date: June 15, 2026</p>
           <p className="text-muted-foreground">
-            Welcome to BobTheBuilder (&quot;us,&quot; &quot;we,&quot; or &quot;our&quot;), an application provided by BuildSmartr Inc. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application, BobTheBuilder (the &quot;Application&quot;). Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the Application.
+            Welcome to Super-Builder AI (&quot;us,&quot; &quot;we,&quot; or &quot;our&quot;), an application provided by BuildSmartr Inc. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application, Super-Builder AI (the &quot;Application&quot;). Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the Application.
           </p>
           <p className="text-muted-foreground">
             We reserve the right to make changes to this Privacy Policy at any time and for any reason. We will alert you about any changes by updating the &quot;Effective Date&quot; of this Privacy Policy. You are encouraged to periodically review this Privacy Policy to stay informed of updates.
@@ -27,7 +27,7 @@ export default function PrivacyPolicyPage() {
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-foreground">1. INFORMATION WE COLLECT</h2>
             <p className="text-muted-foreground">
-              As users of BobTheBuilder are manually onboarded by an administrator from BuildSmartr Inc., the initial account setup primarily utilizes information already provided to BuildSmartr Inc. When you use the Application, we may collect the following information:
+              As users of Super-Builder AI are manually onboarded by an administrator from BuildSmartr Inc., the initial account setup primarily utilizes information already provided to BuildSmartr Inc. When you use the Application, we may collect the following information:
             </p>
             <div className="space-y-4">
               <div>
@@ -149,7 +149,7 @@ export default function PrivacyPolicyPage() {
               <li><span className="font-medium">The right to data portability</span> – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</li>
             </ul>
             <p className="text-muted-foreground">
-              To exercise these rights, please contact us at <a href="mailto:support@bobthebuilder.ai" className="text-primary hover:underline">support@bobthebuilder.ai</a> or through your BuildSmartr Inc. administrator.
+              To exercise these rights, please contact us at <a href="mailto:support@super-builder.ai" className="text-primary hover:underline">support@super-builder.ai</a> or through your BuildSmartr Inc. administrator.
             </p>
           </section>
 
@@ -157,7 +157,7 @@ export default function PrivacyPolicyPage() {
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-foreground">7. CHILDREN&apos;S PRIVACY</h2>
             <p className="text-muted-foreground">
-              BobTheBuilder is intended for use by professionals in the construction industry and is not directed to children under the age of 13 (or the applicable age of digital consent in your jurisdiction). We do not knowingly collect personally identifiable information from children under these ages. If we become aware that a child under the relevant age has provided us with personal information without parental consent, we will take steps to delete such information.
+            Super-Builder AI is intended for use by professionals in the construction industry and is not directed to children under the age of 13 (or the applicable age of digital consent in your jurisdiction). We do not knowingly collect personally identifiable information from children under these ages. If we become aware that a child under the relevant age has provided us with personal information without parental consent, we will take steps to delete such information.
             </p>
           </section>
 
@@ -170,8 +170,8 @@ export default function PrivacyPolicyPage() {
               <p>18860 24 Ave, Unit 110</p>
               <p>Surrey, BC V3Z 0Y8</p>
               <p>Canada</p>
-              <p>Email: <a href="mailto:support@bobthebuilder.ai" className="text-primary hover:underline">support@bobthebuilder.ai</a></p>
-              <p>Website: <a href="https://bobthebuilder.ai/" className="text-primary hover:underline">https://bobthebuilder.ai/</a></p>
+              <p>Email: <a href="mailto:support@super-builder.ai" className="text-primary hover:underline">support@superbuilder.ai</a></p>
+              <p>Website: <a href="https://super-builder.ai/" className="text-primary hover:underline">https://super-builder.ai/</a></p>
             </div>
           </section>
         </div>

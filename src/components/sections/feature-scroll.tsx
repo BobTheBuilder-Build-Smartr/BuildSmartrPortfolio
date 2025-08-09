@@ -38,7 +38,7 @@ export function FeatureScroll() {
   return (
     <Section
       id="feature-scroll"
-      title="BOB The Builder"
+      title="Super-Builder AI"
       subtitle="Built for Builders. Powered by AI."
       className="container px-4 sm:px-10"
     >

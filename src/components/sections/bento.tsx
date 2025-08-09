@@ -50,7 +50,7 @@ export function BentoGrid() {
     <Section
       id="bento"
       title="Benefits"
-      subtitle="BobTheBuilder AI is the Smartest Member of your Team"
+      subtitle="Super-Builder AI is the Smartest Member of your Team"
       className="mx-auto max-w-screen-md px-10"
       ref={ref}
     >

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
-  description: "Terms of Use for BobTheBuilder",
+  description: "Terms of Use for Super-Builder AI",
 };
 
 export default function TermsOfUsePage() {
@@ -11,10 +11,10 @@ export default function TermsOfUsePage() {
       <div className="space-y-8">
         {/* Header Section */}
         <section className="space-y-4">
-          <h1 className="text-3xl font-bold text-foreground">Terms of Use for BobTheBuilder</h1>
+          <h1 className="text-3xl font-bold text-foreground">Terms of Use for Super-Builder AI</h1>
           <p className="text-lg text-muted-foreground">Effective Date: June 15, 2026</p>
           <p className="text-muted-foreground">
-            Please read these Terms of Use (&quot;Terms,&quot; &quot;Terms of Use&quot;) carefully before using the BobTheBuilder mobile application (the &quot;Service,&quot; &quot;Application&quot;) operated by BuildSmartr Inc. (&quot;us,&quot; &quot;we,&quot; or &quot;our&quot;).
+            Please read these Terms of Use (&quot;Terms,&quot; &quot;Terms of Use&quot;) carefully before using the Super-Builder AI mobile application (the &quot;Service,&quot; &quot;Application&quot;) operated by BuildSmartr Inc. (&quot;us,&quot; &quot;we,&quot; or &quot;our&quot;).
           </p>
           <p className="text-muted-foreground">
             Your access to and use of the Service is conditioned upon your acceptance of and compliance with these Terms. These Terms apply to all users who wish to access or use the Service. As users are onboarded by an administrator from BuildSmartr Inc., continued access is also subject to your ongoing relationship with BuildSmartr Inc. or its clients. By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the terms, then you do not have permission to access the Service.
@@ -27,7 +27,7 @@ export default function TermsOfUsePage() {
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold text-foreground">1. DESCRIPTION OF SERVICE</h2>
             <p className="text-muted-foreground">
-              BobTheBuilder is a mobile application designed for use by construction site workers, managers, and related personnel who are clients or employees of BuildSmartr Inc. or its designated partners. The Application allows users, after signing in with a phone number and One-Time Password (OTP) and subsequent session management via secure tokens, to access features across four main tabs: Projects, History, Chat, and Settings. A core function of the Application is to enable users to chat with a bot that is trained on particular project-specific datasets relevant to their work. Users can also update certain personal information such as their name, profile image, and bio.
+            Super-Builder AI is a mobile application designed for use by construction site workers, managers, and related personnel who are clients or employees of BuildSmartr Inc. or its designated partners. The Application allows users, after signing in with a phone number and One-Time Password (OTP) and subsequent session management via secure tokens, to access features across four main tabs: Projects, History, Chat, and Settings. A core function of the Application is to enable users to chat with a bot that is trained on particular project-specific datasets relevant to their work. Users can also update certain personal information such as their name, profile image, and bio.
             </p>
           </section>
 
@@ -123,8 +123,8 @@ export default function TermsOfUsePage() {
               <p>18860 24 Ave, Unit 110</p>
               <p>Surrey, BC V3Z 0Y8</p>
               <p>Canada</p>
-              <p>Email: <a href="mailto:support@bobthebuilder.ai" className="text-primary hover:underline">support@bobthebuilder.ai</a></p>
-              <p>Website: <a href="https://bobthebuilder.ai/" className="text-primary hover:underline">https://bobthebuilder.ai/</a></p>
+              <p>Email: <a href="mailto:support@super-builder.ai" className="text-primary hover:underline">support@super-builder.ai</a></p>
+              <p>Website: <a href="https://super-builder.ai/" className="text-primary hover:underline">https://super-builder.ai/</a></p>
             </div>
           </section>
         </div>
