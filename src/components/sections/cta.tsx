@@ -144,8 +144,8 @@ export function CTA() {
               ))}
             </Marquee>
           </div>
-          <div className="z-10 mx-auto size-24 rounded-[2rem] border bg-white/10 p-3 shadow-2xl backdrop-blur-md dark:bg-black/10 lg:size-32">
-            <Icons.logo className="w-auto h-full" />
+          <div className="z-10 mx-auto size-24 rounded-[2rem] lg:size-32">
+            <Icons.logoImg className="w-full h-full object-contain" />
           </div>
           <div className="z-10 mt-4 flex flex-col items-center text-center text-black dark:text-white">
             <h1 className="text-3xl font-bold lg:text-4xl">
