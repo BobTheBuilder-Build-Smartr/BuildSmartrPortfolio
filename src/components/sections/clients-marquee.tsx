@@ -2,16 +2,15 @@
 
 import { Section } from "@/components/section";
 import { Marquee } from "@/components/magicui/marquee";
-// We are using simple divs for items for now, Image import is not needed
-// import Image from "next/image"; 
+import Image from "next/image";
 
 const marqueeItems = [
-  "JRN Development",
-  "North Pacific Development",
-  "Best Pro Building",
-  "Quorus Properties",
-  "Stockholm Construction Group",
-  "HarvWell Properties",
+  { name: "JRN Development", src: "/Device-1.png" },
+  { name: "North Pacific Development", src: "/Device-2.png" },
+  { name: "Best Pro Building", src: "/Device-3.png" },
+  { name: "Quorus Properties", src: "/Device-4.png" },
+  { name: "Stockholm Construction Group", src: "/Device-5.png" },
+  { name: "HarvWell Properties", src: "/Device-6.png" },
 ];
 
 export function ClientsMarquee() {
@@ -29,11 +28,17 @@ export function ClientsMarquee() {
             key={index}
             className="flex flex-col ml-6 items-center bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 px-2 w-[200px] h-[220px] flex-shrink-0 text-center"
           >
-            <div className="w-16 h-16 bg-gray-400 dark:bg-gray-600 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-xl font-bold flex-shrink-0">
-              Logo
+            <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center flex-shrink-0 overflow-hidden rounded-full ring-1 ring-gray-200 dark:ring-gray-700">
+              <Image
+                src={item.src}
+                alt={`${item.name} logo`}
+                width={64}
+                height={64}
+                className="h-16 w-16 object-cover"
+              />
             </div>
             <div className="mt-auto text-lg font-semibold text-gray-900 dark:text-white line-clamp-3">
-              {item}
+              {item.name}
             </div>
           </div>
         ))}
