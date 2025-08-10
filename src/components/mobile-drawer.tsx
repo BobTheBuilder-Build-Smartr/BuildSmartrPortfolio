@@ -33,7 +33,7 @@ export function MobileDrawer() {
         </DrawerHeader>
         <DrawerFooter>
           <Link
-            href="#"
+            href="/contact"
             className={cn(
               buttonVariants({ variant: "default" }),
               "text-white rounded-full group"
