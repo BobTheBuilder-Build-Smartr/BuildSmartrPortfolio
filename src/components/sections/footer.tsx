@@ -5,6 +5,7 @@ import {
   LinkedInLogoIcon,
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
+import Link from "next/link";
 
 interface Icon {
   icon: JSX.Element;
@@ -60,7 +61,7 @@ export function Footer() {
               key={index}
               className="text-[15px]/normal font-medium text-muted-foreground transition-all duration-100 ease-linear hover:text-foreground hover:underline hover:underline-offset-4"
             >
-              <a href={link.url}>{link.text}</a>
+              <Link href={link.url}>{link.text}</Link>
             </li>
           ))}
         </ul>

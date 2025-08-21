@@ -13,7 +13,7 @@ export const siteConfig = {
   name: "Super-Builder AI",
   description: "Revolutionize Construction with AI",
   cta: "Get Started",
-  url: process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000",
+  url: process.env.NEXT_PUBLIC_APP_URL || (process.env.NODE_ENV === 'production' ? "https://bobthebuilder-build-smartr.github.io/BuildSmartrPortfolio" : "http://localhost:3000"),
   keywords: [
     "AI Calendar",
     "Smart Scheduling",

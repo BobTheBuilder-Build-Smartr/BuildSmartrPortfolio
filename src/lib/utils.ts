@@ -8,14 +8,19 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function absoluteUrl(path: string) {
-  return `${process.env.NEXT_PUBLIC_APP_URL || siteConfig.url}${path}`;
+  // For static assets like images, we need to handle the basePath correctly
+  if (typeof window !== "undefined") {
+    // Client-side: use the current origin and detect basePath
+    const basePath = window.location.pathname.includes('/BuildSmartrPortfolio') ? '/BuildSmartrPortfolio' : '';
+    return `${window.location.origin}${basePath}${path}`;
+  }
+  // Server-side: use the configured URL
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || siteConfig.url;
+  return `${baseUrl}${path}`;
 }
 
 export function publicAssetUrl(path: string) {
-  if (typeof window !== "undefined" && window.location?.origin) {
-    return `${window.location.origin}${path}`;
-  }
-  return `${process.env.NEXT_PUBLIC_APP_URL || siteConfig.url}${path}`;
+  return absoluteUrl(path);
 }
 
 export function constructMetadata({
