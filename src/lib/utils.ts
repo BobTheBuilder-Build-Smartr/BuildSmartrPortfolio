@@ -23,6 +23,16 @@ export function publicAssetUrl(path: string) {
   return absoluteUrl(path);
 }
 
+export function withBasePath(path: string): string {
+  // Return a path prefixed with the basePath when hosted on GitHub Pages
+  if (typeof window !== "undefined") {
+    const isGhPages = window.location.pathname.startsWith("/BuildSmartrPortfolio");
+    return `${isGhPages ? "/BuildSmartrPortfolio" : ""}${path}`;
+  }
+  const isProd = process.env.NODE_ENV === "production";
+  return `${isProd ? "/BuildSmartrPortfolio" : ""}${path}`;
+}
+
 export function constructMetadata({
   title = siteConfig.name,
   description = siteConfig.description,

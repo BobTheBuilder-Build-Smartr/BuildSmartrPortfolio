@@ -3,14 +3,15 @@
 import { Section } from "@/components/section";
 import { Marquee } from "@/components/magicui/marquee";
 import Image from "next/image";
+import { withBasePath } from "@/lib/utils";
 
 const marqueeItems = [
-  { name: "JRN Development", src: "/jobSites/jrn2.jpg" },
-  { name: "North Pacific Development", src: "/jobSites/sample.png" },
-  { name: "Best Pro Building", src: "/jobSites/sample.png" },
-  { name: "Quorus Properties", src: "/jobSites/sample.png" },
-  { name: "Stockholm Construction Group", src: "/jobSites/stockholm.png" },
-  { name: "HarvWell Properties", src: "/jobSites/harwell.png" },
+  { name: "JRN Development", src: withBasePath("/jobSites/jrn2.jpg") },
+  { name: "North Pacific Development", src: withBasePath("/jobSites/sample.png") },
+  { name: "Best Pro Building", src: withBasePath("/jobSites/sample.png") },
+  { name: "Quorus Properties", src: withBasePath("/jobSites/sample.png") },
+  { name: "Stockholm Construction Group", src: withBasePath("/jobSites/stockholm.png") },
+  { name: "HarvWell Properties", src: withBasePath("/jobSites/harwell.png") },
 ];
 
 export function ClientsMarquee() {

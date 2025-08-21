@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { withBasePath } from "@/lib/utils";
 import { useEffect, useRef, useState } from "react";
 
 interface FeatureProps {
@@ -93,7 +94,7 @@ function Feature({
       </motion.div>
       <div className="w-full lg:w-1/2">
         <Image
-          src={imageSrc}
+          src={withBasePath(imageSrc)}
           alt={title}
           className="w-full max-w-[300px] mx-auto"
           width={300}

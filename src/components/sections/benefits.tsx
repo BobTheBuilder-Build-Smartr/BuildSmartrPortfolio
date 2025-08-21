@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/config";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { withBasePath } from "@/lib/utils";
 import { useRef } from "react";
 
 export function Benefits() {
@@ -44,7 +45,7 @@ export function Benefits() {
           >
             <div className="h-[500px] relative rounded-xl overflow-hidden">
               <Image
-                src={benefit.image}
+                src={withBasePath(benefit.image)}
                 alt={benefit.text}
                 className="absolute inset-0 w-full h-full object-cover transition-all duration-500 ease-out object-[0px_10px] hover:object-top"
                 width={400}
