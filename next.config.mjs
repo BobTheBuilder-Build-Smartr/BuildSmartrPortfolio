@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
+  basePath: "/BuildSmartrPortfolio",
   images: {
+    unoptimized: true,
     remotePatterns: [
       { hostname: "localhost" },
       { hostname: "randomuser.me" },

@@ -5,6 +5,8 @@ import { Section } from "@/components/section";
 import { easeInOutCubic } from "@/lib/animation";
 import { siteConfig } from "@/lib/config";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
+import { absoluteUrl } from "@/lib/utils";
 
 export function Hero() {
   const { scrollY } = useScroll({
@@ -66,18 +68,18 @@ export function Hero() {
             workers on your site the answers to work smarter and faster.
           </motion.p>
           <div className="flex justify-center mb-16">
-            <a href="/">
+            <Link href="/">
               <motion.img
-                src="/download-black.svg"
+                src={absoluteUrl("/download-black.svg")}
                 alt="Download"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 1 }}
                 className="w-40 flex-shrink-0 dark:hidden block hover:scale-110 transition-all"
               />
-            </a>
+            </Link>
             <motion.img
-              src="/download-white.svg"
+              src={absoluteUrl("/download-white.svg")}
               alt="Download"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -88,7 +90,7 @@ export function Hero() {
         </div>
         <div className="flex flex-nowrap items-center justify-center gap-4 sm:gap-8 h-auto sm:h-[500px] select-none">
           <motion.img
-            src="/Device-1.png"
+            src={absoluteUrl("/Device-1.png")}
             alt="iPhone"
             initial={{ opacity: 0, x: -200 }}
             animate={{ opacity: 1, x: 0 }}
@@ -97,7 +99,7 @@ export function Hero() {
             className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0"
           />
           <motion.img
-            src="/Device-2.png"
+            src={absoluteUrl("/Device-2.png")}
             alt="iPhone"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
@@ -106,7 +108,7 @@ export function Hero() {
             className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0"
           />
           <motion.img
-            src="/Device-3.png"
+            src={absoluteUrl("/Device-3.png")}
             alt="iPhone"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -115,7 +117,7 @@ export function Hero() {
             className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0"
           />
           <motion.img
-            src="/Device-4.png"
+            src={absoluteUrl("/Device-4.png")}
             alt="iPhone"
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
@@ -124,7 +126,7 @@ export function Hero() {
             className="w-40 sm:w-64 h-[333px] sm:h-[500px] flex-shrink-0"
           />
           <motion.img
-            src="/Device-5.png"
+            src={absoluteUrl("/Device-5.png")}
             alt="iPhone"
             initial={{ opacity: 0, x: 200 }}
             animate={{ opacity: 1, x: 0 }}

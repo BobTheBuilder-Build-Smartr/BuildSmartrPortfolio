@@ -11,10 +11,17 @@ export function absoluteUrl(path: string) {
   return `${process.env.NEXT_PUBLIC_APP_URL || siteConfig.url}${path}`;
 }
 
+export function publicAssetUrl(path: string) {
+  if (typeof window !== "undefined" && window.location?.origin) {
+    return `${window.location.origin}${path}`;
+  }
+  return `${process.env.NEXT_PUBLIC_APP_URL || siteConfig.url}${path}`;
+}
+
 export function constructMetadata({
   title = siteConfig.name,
   description = siteConfig.description,
-  image = absoluteUrl("/og"),
+  image = absoluteUrl("/og.png"),
   ...props
 }: {
   title?: string;

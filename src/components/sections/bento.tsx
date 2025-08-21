@@ -4,7 +4,7 @@
 import { Section } from "@/components/section";
 import { easeInOutCubic } from "@/lib/animation";
 import { siteConfig } from "@/lib/config";
-import { cn } from "@/lib/utils";
+import { cn, publicAssetUrl } from "@/lib/utils";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -79,7 +79,7 @@ export function BentoGrid() {
               )}
             >
               <img
-                src={bentoItem.imageSrc}
+                src={publicAssetUrl(bentoItem.imageSrc)}
                 alt={bentoItem.imageAlt}
                 className="w-full h-64 sm:h-96 rounded-xl object-cover object-top"
               />
