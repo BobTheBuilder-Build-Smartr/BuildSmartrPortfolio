@@ -61,11 +61,10 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.7, ease: easeInOutCubic }}
             className="max-w-2xl mx-auto text-xl mb-8 font-medium text-balance"
           >
-            {/* {siteConfig.name}  */}
-            Get Super-Builder AI on your jobsite - the world&apos;s first
-            construction AI agent that knows all the details of your project.
-            Super-Builder AI reads plans, pdf&apos;s, answers questions and gives all
-            workers on your site the answers to work smarter and faster.
+            Bring Super-Builder AI to your jobsite — an intelligent construction
+            assistant built to understand every detail of your project.
+            Super-Builder AI reads drawings and PDFs, answers questions, and
+            helps everyone on your team work more efficiently and stay aligned.
           </motion.p>
           <div className="flex justify-center mb-16">
             <Link href="/">
