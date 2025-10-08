@@ -66,10 +66,8 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
-      - name: Build and export static Next.js site
-        run: |
-          ${{ steps.detect-package-manager.outputs.runner }} next build
-          ${{ steps.detect-package-manager.outputs.runner }} next export
+      - name: Build Next.js static site (Next 14+)
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
       - name: Upload static site as artifact
         uses: actions/upload-pages-artifact@v3
