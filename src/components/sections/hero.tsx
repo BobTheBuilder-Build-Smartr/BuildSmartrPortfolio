@@ -68,7 +68,7 @@ export function Hero() {
           </motion.p>
           <div className="flex justify-center mb-16">
             <Link href="/">
-              <motion.img
+              <motion.img 
                 src={absoluteUrl("/download-black.svg")}
                 alt="Download"
                 initial={{ opacity: 0 }}
