@@ -3,20 +3,99 @@ import { type ClassValue, clsx } from "clsx";
 import { Metadata } from "next";
 import { twMerge } from "tailwind-merge";
 
+const EXTERNAL_URL_REGEX = /^[a-zA-Z][a-zA-Z\d+\-.]*:/;
+const GITHUB_PAGES_HOST_SUFFIX = "github.io";
+
+type NextData = {
+  assetPrefix?: string;
+};
+
+function isExternalUrl(path: string): boolean {
+  return EXTERNAL_URL_REGEX.test(path);
+}
+
+function ensureLeadingSlash(path: string): string {
+  return path.startsWith("/") ? path : `/${path}`;
+}
+
+function normalizeBasePath(value?: string | null): string {
+  if (!value) {
+    return "";
+  }
+
+  const trimmed = value.trim();
+  if (!trimmed || trimmed === "/") {
+    return "";
+  }
+
+  const withoutTrailingSlash = trimmed.replace(/\/+$/, "");
+  const withLeadingSlash = withoutTrailingSlash.startsWith("/")
+    ? withoutTrailingSlash
+    : `/${withoutTrailingSlash}`;
+
+  return withLeadingSlash === "/" ? "" : withLeadingSlash;
+}
+
+function parseUrl(value: string): URL | null {
+  try {
+    return new URL(value);
+  } catch {
+    return null;
+  }
+}
+
+const configuredAssetUrl =
+  parseUrl(process.env.NEXT_PUBLIC_ASSET_HOST ?? "") ??
+  parseUrl(process.env.NEXT_PUBLIC_APP_URL ?? "") ??
+  parseUrl(siteConfig.url) ??
+  parseUrl("http://localhost:3000")!;
+
+const configuredOrigin = configuredAssetUrl.origin;
+const configuredBasePath = normalizeBasePath(configuredAssetUrl.pathname);
+
+function getRuntimeOrigin(): string {
+  if (typeof window === "undefined") {
+    return configuredOrigin;
+  }
+
+  if (window.location.hostname.endsWith(GITHUB_PAGES_HOST_SUFFIX)) {
+    return configuredOrigin;
+  }
+
+  return window.location.origin;
+}
+
+function getRuntimeBasePath(): string {
+  if (typeof window === "undefined") {
+    return configuredBasePath;
+  }
+
+  const nextData = (window as typeof window & { __NEXT_DATA__?: NextData })
+    .__NEXT_DATA__;
+  const assetPrefix = normalizeBasePath(nextData?.assetPrefix);
+  if (assetPrefix) {
+    return assetPrefix;
+  }
+
+  if (window.location.hostname.endsWith(GITHUB_PAGES_HOST_SUFFIX)) {
+    return configuredBasePath;
+  }
+
+  return configuredBasePath;
+}
+
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
 export function absoluteUrl(path: string) {
-  // For static assets like images, we need to handle the basePath correctly
-  if (typeof window !== "undefined") {
-    // Client-side: use the current origin and detect basePath
-    const basePath = window.location.pathname.includes('/BuildSmartrPortfolio') ? '/BuildSmartrPortfolio' : '';
-    return `${window.location.origin}${basePath}${path}`;
+  if (isExternalUrl(path)) {
+    return path;
   }
-  // Server-side: use the configured URL
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || siteConfig.url;
-  return `${baseUrl}${path}`;
+
+  const origin = getRuntimeOrigin();
+  const basePath = getRuntimeBasePath();
+  return `${origin}${basePath}${ensureLeadingSlash(path)}`;
 }
 
 export function publicAssetUrl(path: string) {
@@ -24,13 +103,7 @@ export function publicAssetUrl(path: string) {
 }
 
 export function withBasePath(path: string): string {
-  // Return a path prefixed with the basePath when hosted on GitHub Pages
-  if (typeof window !== "undefined") {
-    const isGhPages = window.location.pathname.startsWith("/BuildSmartrPortfolio");
-    return `${isGhPages ? "/BuildSmartrPortfolio" : ""}${path}`;
-  }
-  const isProd = process.env.NODE_ENV === "production";
-  return `${isProd ? "/BuildSmartrPortfolio" : ""}${path}`;
+  return absoluteUrl(path);
 }
 
 export function constructMetadata({

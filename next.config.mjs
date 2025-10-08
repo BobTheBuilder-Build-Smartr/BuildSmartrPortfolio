@@ -10,6 +10,8 @@ const nextConfig = {
       { hostname: "images.unsplash.com" },
       { hostname: "avatar.vercel.sh" },
       { hostname: "via.placeholder.com" },
+      { hostname: "super-builder.ai" },
+      { hostname: "bobthebuilder-build-smartr.github.io" },
     ],
   },
 };
