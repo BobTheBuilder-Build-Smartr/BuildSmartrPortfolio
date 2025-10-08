@@ -13,7 +13,11 @@ export const siteConfig = {
   name: "Super-Builder AI",
   description: "Revolutionize Construction with AI",
   cta: "Get Started",
-  url: process.env.NEXT_PUBLIC_APP_URL || (process.env.NODE_ENV === 'production' ? "https://bobthebuilder-build-smartr.github.io/BuildSmartrPortfolio" : "http://localhost:3000"),
+  url:
+    process.env.NEXT_PUBLIC_APP_URL ||
+    (process.env.NODE_ENV === "production"
+      ? "https://bobthebuilder-build-smartr.github.io/BuildSmartrPortfolio"
+      : "http://localhost:3000"),
   keywords: [
     "AI Calendar",
     "Smart Scheduling",
@@ -199,10 +203,10 @@ export const siteConfig = {
       question: "How does Super-Builder AI interpret my construction drawings?",
       answer: (
         <span>
-          Super-Builder AI uses advanced AI to analyze architectural and engineering
-          documents, recognizing key elements such as dimensions, materials, and
-          structural components. It then provides insights, flags conflicts, and
-          answers questions based on the plans&apos; details.
+          Super-Builder AI uses advanced AI to analyze architectural and
+          engineering documents, recognizing key elements such as dimensions,
+          materials, and structural components. It then provides insights, flags
+          conflicts, and answers questions based on the plans&apos; details.
         </span>
       ),
     },
@@ -210,9 +214,9 @@ export const siteConfig = {
       question: "Is my data secure with Super-Builder AI?",
       answer: (
         <span>
-          Absolutely. We encrypt all project data end-to-end and adhere to strict
-          data privacy practices. Your sensitive construction documents and chat
-          history remain confidential and secure.
+          Absolutely. We encrypt all project data end-to-end and adhere to
+          strict data privacy practices. Your sensitive construction documents
+          and chat history remain confidential and secure.
         </span>
       ),
     },
@@ -221,8 +225,8 @@ export const siteConfig = {
       answer: (
         <span>
           Our AI keeps everyone in the loop by centralizing plan updates and
-          answers to common questions. Team members can ask Super-Builder AI about
-          any aspect of the project, and the AI coordinates changes and
+          answers to common questions. Team members can ask Super-Builder AI
+          about any aspect of the project, and the AI coordinates changes and
           notifications across the entire team.
         </span>
       ),
@@ -233,8 +237,8 @@ export const siteConfig = {
         <span>
           While core functionality requires an online connection to run AI
           queries, you can still access certain cached or previously viewed data
-          offline. Once reconnected, Super-Builder AI syncs and updates the project
-          details and insights.
+          offline. Once reconnected, Super-Builder AI syncs and updates the
+          project details and insights.
         </span>
       ),
     },
@@ -334,7 +338,7 @@ export const siteConfig = {
     },
     {
       id: 11,
-      text: "The AI-suggested solutions for design conflicts have increased our team’s productivity and reduced rework.",
+      text: "The AI-suggested solutions for design conflicts have increased our team's productivity and reduced rework.",
       name: "Kevin Lee",
       role: "Operations Manager",
       image:
