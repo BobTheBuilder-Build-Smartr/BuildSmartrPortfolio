@@ -13,6 +13,10 @@ export const metadata: Metadata = {
     default: `${siteConfig.name} | ${siteConfig.description}`,
   },
   description: siteConfig.description,
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  },
 };
 
 export const viewport: Viewport = {
