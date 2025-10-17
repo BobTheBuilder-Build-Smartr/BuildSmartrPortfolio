@@ -99,11 +99,16 @@ export function absoluteUrl(path: string) {
 }
 
 export function publicAssetUrl(path: string) {
-  return absoluteUrl(path);
+  if (isExternalUrl(path)) {
+    return path;
+  }
+
+  const basePath = getRuntimeBasePath();
+  return `${basePath}${ensureLeadingSlash(path)}`;
 }
 
 export function withBasePath(path: string): string {
-  return absoluteUrl(path);
+  return publicAssetUrl(path);
 }
 
 export function constructMetadata({

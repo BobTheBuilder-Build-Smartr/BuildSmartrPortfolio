@@ -1,5 +1,5 @@
 import { siteConfig } from "@/lib/config";
-import { absoluteUrl } from "@/lib/utils";
+import { publicAssetUrl } from "@/lib/utils";
 type IconProps = React.HTMLAttributes<SVGElement>;
 type ImgIconProps = React.ImgHTMLAttributes<HTMLImageElement>;
 
@@ -160,7 +160,11 @@ export const Icons = {
     </svg>
   ),
   logoImg: (props: ImgIconProps) => (
-    <img src={absoluteUrl("/builderlogoDARKsm.png")} alt="Super-Builder AI" {...props} />
+    <img
+      src={publicAssetUrl("/builderlogoDARKsm.png")}
+      alt="Super-Builder AI"
+      {...props}
+    />
   ),
   twitter: (props: IconProps) => (
     <svg
